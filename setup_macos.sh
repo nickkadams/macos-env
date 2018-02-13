@@ -60,6 +60,7 @@ echo "git: username?"
 read username
 git config --global user.username "$username"
 git config --global core.editor vim
+git config --global http.sslVerify "false"
 #git config --list
 
 # tfenv
@@ -71,6 +72,7 @@ brew install rbenv
 rbenv install 2.5.0
 brew install rbenv-chefdk
 brew cask install chefdk
+mkdir -p ~/.chef
 mkdir -p "$(rbenv root)/versions/chefdk"
 rbenv shell chefdk
 rbenv rehash
@@ -89,7 +91,15 @@ brew install go
 brew install htop
 brew install jq
 brew install jsonlint
-brew install packer
+
+#brew install packer # until I refactor for 1.2.0
+wget https://releases.hashicorp.com/packer/1.1.3/packer_1.1.3_darwin_amd64.zip
+unzip packer_1.1.3_darwin_amd64.zip
+mv packer /usr/local/bin/
+packer -v
+rm -f packer_1.1.3_darwin_amd64.zip
+
+brew install the_silver_searcher
 brew install tmate
 brew install tmux
 brew install tree
@@ -128,8 +138,7 @@ brew cask install zoomus
 brew cask install atom
 apm install auto-update-packages
 apm install busy-signal
-apm install linter
-apm install linter-ui-default
+apm install click-link
 apm install duplicate-removal
 apm install git-blame
 apm install git-plus
@@ -139,12 +148,12 @@ apm install language-chef
 apm install language-rust
 apm install language-terraform
 apm install language-yaml-cloudformation
+apm install linter
+apm install linter-packer-validate
+apm install linter-ui-default
 
 # oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-# shell
-#sudo chsh -s $(which zsh) $(whoami)
 
 # Dock
 # delete
