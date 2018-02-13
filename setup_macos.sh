@@ -128,6 +128,7 @@ brew cask install microsoft-office
 brew cask install postman
 brew cask install slack
 #brew cask install sourcetree
+brew install https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb
 brew cask install vagrant
 brew cask install virtualbox
 brew cask install vlc
