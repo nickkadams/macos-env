@@ -91,7 +91,6 @@ brew install go
 brew install htop
 brew install jq
 brew install jsonlint
-
 #brew install packer # until I refactor for 1.2.0
 wget https://releases.hashicorp.com/packer/1.1.3/packer_1.1.3_darwin_amd64.zip
 unzip packer_1.1.3_darwin_amd64.zip
@@ -99,6 +98,7 @@ mv packer /usr/local/bin/
 packer -v
 rm -f packer_1.1.3_darwin_amd64.zip
 
+brew install sslyze
 brew install the_silver_searcher
 brew install tmate
 brew install tmux
@@ -121,11 +121,12 @@ brew cask install dbeaver-community
 #brew cask install flycut
 brew cask install google-backup-and-sync
 brew cask install google-chrome
+brew cask install insomnia
 brew cask install iterm2
 brew cask install java
 brew cask install kindle
 brew cask install microsoft-office
-brew cask install postman
+#brew cask install postman
 brew cask install slack
 #brew cask install sourcetree
 brew install https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb
