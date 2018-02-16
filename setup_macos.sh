@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2018.02.11
+# Updated 2018.02.16
 
 # Passwordless sudo
 
@@ -19,6 +19,15 @@ dscacheutil -flushcache
 sudo networksetup -setv6off Wi-Fi
 sudo networksetup -setv6off Ethernet
 #sudo networksetup -setv6off "Thunderbolt Ethernet"
+
+# SMB performance tuning
+sudo defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
+sudo defaults write com.apple.desktopservices UseBareEnumeration -bool FALSE
+cat << EOF > nsmb.conf
+[default]
+dir_cache_off=yes
+EOF
+sudo mv -f nsmb.conf /etc/nsmb.conf
 
 # Xcode check
 check=$((xcode-\select --install) 2>&1)
