@@ -38,6 +38,9 @@ while [[ "$check" == "$str" ]]; do
   exit;
 done
 
+# unhide ~/Library
+sudo chflags nohidden ~/Library/
+
 # Homebrew check
 check=$((which brew) 2>&1)
 #echo $check
@@ -75,6 +78,9 @@ git config --global http.sslVerify "false"
 # tfenv
 brew install tfenv
 tfenv install 0.11.3
+# setup environment
+mkdir -p ~/.env.d
+chmod 750 ~/.env.d
 
 # rbenv/chefdk
 brew install rbenv
