@@ -99,6 +99,7 @@ brew tap versent/homebrew-taps
 brew install saml2aws
 
 # CLI
+brew install cli53
 brew install curl
 brew install direnv
 brew install findutils
