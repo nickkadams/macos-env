@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2018.02.16
+# Updated 2018.03.07
 
 # Passwordless sudo
 
@@ -107,6 +107,7 @@ brew install go
 brew install htop
 brew install jq
 brew install jsonlint
+brew install ngrep
 #brew install packer # until I refactor for 1.2.0
 wget https://releases.hashicorp.com/packer/1.1.3/packer_1.1.3_darwin_amd64.zip
 unzip packer_1.1.3_darwin_amd64.zip
