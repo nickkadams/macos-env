@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2018.03.07
+# Updated 2018.03.18
 
 # Passwordless sudo
 
@@ -99,6 +99,7 @@ brew tap versent/homebrew-taps
 brew install saml2aws
 
 # CLI
+brew install coreutils
 brew install cli53
 brew install curl
 brew install direnv
