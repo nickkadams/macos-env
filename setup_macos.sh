@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2018.03.18
+# Updated 2018.03.19
 
 # Passwordless sudo
 
@@ -77,7 +77,7 @@ git config --global http.sslVerify "false"
 
 # tfenv
 brew install tfenv
-tfenv install 0.11.3
+tfenv install 0.11.4
 # setup environment
 mkdir -p ~/.env.d
 chmod 750 ~/.env.d
