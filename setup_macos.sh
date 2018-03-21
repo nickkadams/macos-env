@@ -1,5 +1,9 @@
 #!/bin/bash
-# Updated 2018.03.19
+# Updated 2018.03.21
+
+TF_VER="0.11.4"
+RB_VER="2.5.0"
+PK_VER="1.1.3"
 
 # Passwordless sudo
 
@@ -77,14 +81,14 @@ git config --global http.sslVerify "false"
 
 # tfenv
 brew install tfenv
-tfenv install 0.11.4
+tfenv install $TF_VER
 # setup environment
 mkdir -p ~/.env.d
 chmod 750 ~/.env.d
 
 # rbenv/chefdk
 brew install rbenv
-rbenv install 2.5.0
+rbenv install $RB_VER
 brew install rbenv-chefdk
 brew cask install chefdk
 mkdir -p ~/.chef
@@ -110,11 +114,11 @@ brew install jq
 brew install jsonlint
 brew install ngrep
 #brew install packer # until I refactor for 1.2.0
-wget https://releases.hashicorp.com/packer/1.1.3/packer_1.1.3_darwin_amd64.zip
-unzip packer_1.1.3_darwin_amd64.zip
+wget https://releases.hashicorp.com/packer/$PK_VER/packer_$PK_VER_darwin_amd64.zip
+unzip packer_$PK_VER_darwin_amd64.zip
 mv packer /usr/local/bin/
 packer -v
-rm -f packer_1.1.3_darwin_amd64.zip
+rm -f packer_$PK_VER_darwin_amd64.zip
 
 brew install sslyze
 brew install the_silver_searcher
