@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2018.03.24
+# Updated 2018.03.27
 
 TF_VER="0.11.3"
 RB_VER="2.5.0"
@@ -120,6 +120,7 @@ mv packer /usr/local/bin/
 packer -v
 rm -f packer_$PK_VER_darwin_amd64.zip
 
+brew install pre-commit
 brew install sslyze
 brew install the_silver_searcher
 brew install tmate
