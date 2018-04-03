@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2018.03.27
+# Updated 2018.04.03
 
 TF_VER="0.11.3"
 RB_VER="2.5.0"
@@ -149,6 +149,7 @@ brew cask install iterm2
 brew cask install java
 brew cask install kindle
 brew cask install microsoft-office
+brew cask install pgadmin4
 #brew cask install postman
 brew cask install slack
 #brew cask install sourcetree
