@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2018.04.03
+# Updated 2018.04.06
 
 TF_VER="0.11.3"
 RB_VER="2.5.0"
@@ -96,6 +96,9 @@ mkdir -p "$(rbenv root)/versions/chefdk"
 rbenv shell chefdk
 rbenv rehash
 #rbenv which ruby
+brew cask install inspec
+mv -f ~/.rbenv/shims/inspec ~/.rbenv/shims/inspec-chefdk
+ln -s /opt/inspec/bin/inspec ~/.rbenv/shims/inspec
 
 # saml2aws
 brew install awscli
