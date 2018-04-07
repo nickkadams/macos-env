@@ -1,7 +1,7 @@
 #!/bin/bash
-# Updated 2018.04.06
+# Updated 2018.04.07
 
-TF_VER="0.11.3"
+TF_VER="0.11.6"
 RB_VER="2.5.0"
 PK_VER="1.1.3"
 
@@ -174,6 +174,7 @@ apm install git-plus
 apm install highlight-selected
 apm install intentions
 apm install language-chef
+apm install language-inspec
 apm install language-rust
 apm install language-terraform
 apm install language-yaml-cloudformation
