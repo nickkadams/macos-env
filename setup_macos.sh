@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2018.04.13
+# Updated 2018.04.18
 
 TF_VER="0.11.7"
 RB_VER="2.5.1"
@@ -116,7 +116,8 @@ brew install htop
 brew install jq
 brew install jsonlint
 brew install ngrep
-#brew install packer # until I refactor for 1.2.0
+#brew install packer
+# packer until I refactor for 1.2.0
 wget https://releases.hashicorp.com/packer/$PK_VER/packer_$PK_VER_darwin_amd64.zip
 unzip packer_$PK_VER_darwin_amd64.zip
 mv packer /usr/local/bin/
@@ -125,6 +126,10 @@ rm -f packer_$PK_VER_darwin_amd64.zip
 
 brew install pipenv
 brew install pre-commit
+# rmtree
+brew tap beeftornado/rmtree
+brew install rmtree
+
 brew install sslyze
 brew install the_silver_searcher
 brew install tmate
