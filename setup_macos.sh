@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2018.04.18
+# Updated 2018.04.19
 
 TF_VER="0.11.7"
 RB_VER="2.5.1"
@@ -130,7 +130,9 @@ brew install pre-commit
 brew tap beeftornado/rmtree
 brew install rmtree
 
+brew install https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb
 brew install sslyze
+brew install terraform-docs
 brew install the_silver_searcher
 brew install tmate
 brew install tmux
@@ -162,7 +164,6 @@ brew cask install pgadmin4
 #brew cask install postman
 brew cask install slack
 #brew cask install sourcetree
-brew install https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb
 brew cask install vagrant
 brew cask install virtualbox
 brew cask install vlc
