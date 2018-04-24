@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2018.04.19
+# Updated 2018.04.24
 
 TF_VER="0.11.7"
 RB_VER="2.5.1"
@@ -129,6 +129,10 @@ brew install pre-commit
 # rmtree
 brew tap beeftornado/rmtree
 brew install rmtree
+
+# s5cmd
+brew tap peakgames/s5cmd https://github.com/peakgames/s5cmd
+brew install s5cmd
 
 brew install https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb
 brew install sslyze
