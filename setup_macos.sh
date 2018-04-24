@@ -166,6 +166,7 @@ brew cask install kindle
 brew cask install microsoft-office
 brew cask install pgadmin4
 #brew cask install postman
+brew cask install powershell
 brew cask install slack
 #brew cask install sourcetree
 brew cask install vagrant
