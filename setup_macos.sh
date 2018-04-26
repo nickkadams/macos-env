@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2018.04.24
+# Updated 2018.04.26
 
 TF_VER="0.11.7"
 RB_VER="2.5.1"
@@ -106,6 +106,7 @@ brew tap versent/homebrew-taps
 brew install saml2aws
 
 # CLI
+brew install ansible
 brew install coreutils
 brew install cli53
 brew install curl
