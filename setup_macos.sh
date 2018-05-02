@@ -1,9 +1,9 @@
 #!/bin/bash
-# Updated 2018.04.26
+# Updated 2018.05.02
 
 TF_VER="0.11.7"
 RB_VER="2.5.1"
-PK_VER="1.1.3"
+#PK_VER="1.1.3"
 
 # Passwordless sudo
 
@@ -117,13 +117,12 @@ brew install htop
 brew install jq
 brew install jsonlint
 brew install ngrep
-#brew install packer
-# packer until I refactor for 1.2.0
-wget https://releases.hashicorp.com/packer/$PK_VER/packer_$PK_VER_darwin_amd64.zip
-unzip packer_$PK_VER_darwin_amd64.zip
-mv packer /usr/local/bin/
-packer -v
-rm -f packer_$PK_VER_darwin_amd64.zip
+brew install packer
+#wget https://releases.hashicorp.com/packer/$PK_VER/packer_$PK_VER_darwin_amd64.zip
+#unzip packer_$PK_VER_darwin_amd64.zip
+#mv packer /usr/local/bin/
+#packer -v
+#rm -f packer_$PK_VER_darwin_amd64.zip
 
 brew install pipenv
 brew install pre-commit
