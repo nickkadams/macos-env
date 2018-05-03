@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2018.05.02
+# Updated 2018.05.03
 
 TF_VER="0.11.7"
 RB_VER="2.5.1"
@@ -193,6 +193,10 @@ apm install language-yaml-cloudformation
 apm install linter
 apm install linter-packer-validate
 apm install linter-ui-default
+
+# pip/plugins
+pip3 install -U pylint
+pip3 install -U flask
 
 # oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
