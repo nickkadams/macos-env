@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2018.05.03
+# Updated 2018.05.04
 
 TF_VER="0.11.7"
 RB_VER="2.5.1"
@@ -195,8 +195,9 @@ apm install linter-packer-validate
 apm install linter-ui-default
 
 # pip/plugins
-pip3 install -U pylint
 pip3 install -U flask
+pip3 install -U git+https://github.com/TheJumpCloud/jcapi-python.git#subdirectory=jcapiv2
+pip3 install -U pylint
 
 # oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
