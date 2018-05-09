@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2018.05.04
+# Updated 2018.05.09
 
 TF_VER="0.11.7"
 RB_VER="2.5.1"
@@ -193,6 +193,11 @@ apm install language-yaml-cloudformation
 apm install linter
 apm install linter-packer-validate
 apm install linter-ui-default
+
+# pip.conf setup
+mkdir -p ~/.config/pip
+echo "[list]" > ~/.config/pip/pip.conf
+echo "format=columns" >> ~/.config/pip/pip.conf
 
 # pip/plugins
 pip3 install -U boto3
