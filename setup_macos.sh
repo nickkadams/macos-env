@@ -195,6 +195,7 @@ apm install linter-packer-validate
 apm install linter-ui-default
 
 # pip/plugins
+pip3 install -U boto3
 pip3 install -U flask
 pip3 install -U git+https://github.com/TheJumpCloud/jcapi-python.git#subdirectory=jcapiv2
 pip3 install -U pylint
