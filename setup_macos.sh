@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2018.05.09
+# Updated 2018.05.25
 
 TF_VER="0.11.7"
 RB_VER="2.5.1"
@@ -114,6 +114,7 @@ brew install direnv
 brew install findutils
 brew install go
 brew install htop
+brew install ipcalc
 brew install jq
 brew install jsonlint
 brew install ngrep
