@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2018.05.29
+# Updated 2018.06.14
 
 TF_VER="0.11.7"
 RB_VER="2.5.1"
@@ -85,6 +85,10 @@ tfenv install $TF_VER
 # setup environment
 mkdir -p ~/.env.d
 chmod 750 ~/.env.d
+
+# tflint
+curl -L -o /tmp/tflint.zip https://github.com/wata727/tflint/releases/download/v0.7.0/tflint_darwin_amd64.zip
+unzip /tmp/tflint.zip -d /usr/local/bin
 
 # rbenv/chefdk
 brew install rbenv
@@ -206,6 +210,7 @@ pip3 install -U boto3
 pip3 install -U flask
 pip3 install -U git+https://github.com/TheJumpCloud/jcapi-python.git#subdirectory=jcapiv2
 pip3 install -U pylint
+pip3 install -U testinfra
 
 # oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
