@@ -115,10 +115,10 @@ brew install consul
 brew install coreutils
 brew install cli53
 brew install curl
+brew install dep
 brew install direnv
 brew install findutils
 brew install go
-brew install govendor
 brew install graphviz
 brew install htop
 brew install ipcalc
