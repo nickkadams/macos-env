@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2018.06.14
+# Updated 2018.07.12
 
 TF_VER="0.11.7"
 RB_VER="2.5.1"
@@ -111,12 +111,14 @@ brew install saml2aws
 
 # CLI
 brew install ansible
+brew install consul
 brew install coreutils
 brew install cli53
 brew install curl
 brew install direnv
 brew install findutils
 brew install go
+brew install govendor
 brew install graphviz
 brew install htop
 brew install ipcalc
@@ -189,6 +191,7 @@ apm install click-link
 apm install duplicate-removal
 apm install git-blame
 apm install git-plus
+apm install go-plus
 apm install highlight-selected
 apm install intentions
 apm install language-chef
