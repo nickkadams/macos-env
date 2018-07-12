@@ -124,6 +124,7 @@ brew install htop
 brew install ipcalc
 brew install jq
 brew install jsonlint
+brew install neovim
 brew install ngrep
 brew install packer
 #wget https://releases.hashicorp.com/packer/$PK_VER/packer_$PK_VER_darwin_amd64.zip
@@ -202,6 +203,9 @@ apm install language-yaml-cloudformation
 apm install linter
 apm install linter-packer-validate
 apm install linter-ui-default
+
+# Go debugger
+go get -u github.com/derekparker/delve/cmd/dlv
 
 # pip.conf setup
 mkdir -p ~/.config/pip
