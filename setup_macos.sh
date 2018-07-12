@@ -181,6 +181,7 @@ brew cask install slack
 #brew cask install sourcetree
 brew cask install vagrant
 brew cask install virtualbox
+brew cask install visual-studio-code
 brew cask install vlc
 brew cask install vmware-remote-console
 brew cask install zoomus
