@@ -206,6 +206,9 @@ apm install linter
 apm install linter-packer-validate
 apm install linter-ui-default
 
+# code/plugins
+code --install-extension ms-vscode.Go
+
 # Go debugger
 go get -u github.com/derekparker/delve/cmd/dlv
 
