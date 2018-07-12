@@ -121,6 +121,7 @@ brew install findutils
 brew install go
 brew install graphviz
 brew install htop
+brew install httpie
 brew install ipcalc
 brew install jq
 brew install jsonlint
