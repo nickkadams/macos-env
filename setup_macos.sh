@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2018.07.12
+# Updated 2018.08.02
 
 TF_VER="0.11.7"
 RB_VER="2.5.1"
@@ -172,6 +172,7 @@ brew cask install google-chrome
 brew cask install insomnia
 brew cask install iterm2
 brew cask install java
+brew cask install karabiner-elements
 brew cask install kindle
 brew cask install microsoft-office
 brew cask install pgadmin4
