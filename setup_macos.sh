@@ -1,7 +1,7 @@
 #!/bin/bash
-# Updated 2018.08.02
+# Updated 2018.08.22
 
-TF_VER="0.11.7"
+TF_VER="0.11.8"
 RB_VER="2.5.1"
 #PK_VER="1.1.3"
 
