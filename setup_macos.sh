@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2018.08.22
+# Updated 2018.08.28
 
 TF_VER="0.11.8"
 RB_VER="2.5.1"
@@ -111,6 +111,7 @@ brew install saml2aws
 
 # CLI
 brew install ansible
+brew install azure-cli
 brew install consul
 brew install coreutils
 brew install cli53
