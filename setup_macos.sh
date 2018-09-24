@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2018.09.01
+# Updated 2018.09.24
 
 TF_VER="0.11.8"
 RB_VER="2.5.1"
@@ -168,6 +168,7 @@ brew cask install calibre
 #brew cask install dash
 #brew cask install docker
 brew cask install dbeaver-community
+brew cask install filezilla
 #brew cask install flycut
 brew cask install google-backup-and-sync
 brew cask install google-chrome
