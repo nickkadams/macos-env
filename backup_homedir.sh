@@ -5,7 +5,7 @@ DATE=`date +%Y-%m-%d`
 ID=`whoami`
 
 cd
-tar -pzcvf /tmp/${DATE}_${ID}.tgz \
+tar -pzcvf ~/Downloads/${DATE}_${ID}.tgz \
     --exclude='Applications' \
     --exclude='Calibre Library' \
     --exclude='Desktop' \
