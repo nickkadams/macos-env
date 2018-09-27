@@ -1,5 +1,5 @@
 #!/bin/bash -eux
-# Updated 2018.09.24
+# Updated 2018.09.27
 
 DATE=`date +%Y-%m-%d`
 ID=`whoami`
@@ -56,6 +56,7 @@ tar -pzcvf ~/Downloads/${DATE}_${ID}.tgz \
     --exclude='.python_history' \
     --exclude='.rbenv' \
     --exclude='.ruby-version' \
+    --exclude='.ssh/known_hosts' \
     --exclude='.subversion' \
     --exclude='.terraform.d' \
     --exclude='.vagrant.d' \

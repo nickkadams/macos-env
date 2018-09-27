@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2018.09.24
+# Updated 2018.09.27
 
 TF_VER="0.11.8"
 RB_VER="2.5.1"
@@ -147,6 +147,7 @@ brew tap peakgames/s5cmd https://github.com/peakgames/s5cmd
 brew install s5cmd
 
 brew install https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb
+brew install sshuttle
 brew install sslyze
 brew install terraform-docs
 brew install the_silver_searcher
