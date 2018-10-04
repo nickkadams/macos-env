@@ -1,11 +1,15 @@
 #!/bin/bash
-# Updated 2018.09.27
+# Updated 2018.10.04
 
 TF_VER="0.11.8"
 RB_VER="2.5.1"
 #PK_VER="1.1.3"
+#AN_VER="2.3.3"
 
 # Passwordless sudo
+me=`id -nu`
+echo "$me ALL=(ALL) NOPASSWD: ALL" | sudo tee /private/etc/sudoers.d/$me
+sudo chmod 440 /private/etc/sudoers.d/$me
 
 # Set hostname
 clear
@@ -111,6 +115,8 @@ brew install saml2aws
 
 # CLI
 brew install ansible
+#pip install -U ansible==$AN_VER
+
 brew install azure-cli
 brew install bat
 brew install consul
@@ -171,14 +177,14 @@ brew cask install calibre
 brew cask install dbeaver-community
 brew cask install filezilla
 #brew cask install flycut
-brew cask install google-backup-and-sync
+#brew cask install google-backup-and-sync
 brew cask install google-chrome
 brew cask install insomnia
 brew cask install iterm2
 brew cask install java
-brew cask install karabiner-elements
+#brew cask install karabiner-elements
 brew cask install kindle
-brew cask install microsoft-office
+#brew cask install microsoft-office
 brew cask install pgadmin4
 #brew cask install postman
 brew cask install powershell
@@ -229,9 +235,6 @@ pip3 install -U git+https://github.com/TheJumpCloud/jcapi-python.git#subdirector
 pip3 install -U pylint
 pip3 install -U testinfra
 
-# oh my zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
 # Dock
 # delete
 defaults delete com.apple.dock persistent-apps
@@ -257,3 +260,6 @@ sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.screensharing.pli
 
 # Cleanup
 brew cleanup
+
+# oh my zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
