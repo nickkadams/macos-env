@@ -1,8 +1,8 @@
 #!/bin/bash
-# Updated 2018.10.04
+# Updated 2018.11.08
 
-TF_VER="0.11.8"
-RB_VER="2.5.1"
+TF_VER="0.11.10"
+RB_VER="2.5.3"
 #PK_VER="1.1.3"
 #AN_VER="2.3.3"
 
@@ -26,7 +26,8 @@ dscacheutil -flushcache
 #sudo networksetup -listallhardwareports
 sudo networksetup -setv6off Wi-Fi
 sudo networksetup -setv6off Ethernet
-#sudo networksetup -setv6off "Thunderbolt Ethernet"
+sudo networksetup -setv6off "Bluetooth PAN"
+sudo networksetup -setv6off "Thunderbolt Bridge"
 
 # SMB performance tuning
 sudo defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
@@ -91,20 +92,20 @@ mkdir -p ~/.env.d
 chmod 750 ~/.env.d
 
 # tflint
-curl -L -o /tmp/tflint.zip https://github.com/wata727/tflint/releases/download/v0.7.0/tflint_darwin_amd64.zip
-unzip /tmp/tflint.zip -d /usr/local/bin
+curl -L -o /tmp/tflint.zip https://github.com/wata727/tflint/releases/download/v0.7.2/tflint_darwin_amd64.zip
+iunzip /tmp/tflint.zip -d /usr/local/bin
 
 # rbenv/chefdk
 brew install rbenv
 rbenv install $RB_VER
 brew install rbenv-chefdk
-brew cask install chefdk
+brew cask install chef/chef/chefdk
 mkdir -p ~/.chef
 mkdir -p "$(rbenv root)/versions/chefdk"
 rbenv shell chefdk
 rbenv rehash
 #rbenv which ruby
-brew cask install inspec
+brew cask install chef/chef/inspec
 mv -f ~/.rbenv/shims/inspec ~/.rbenv/shims/inspec-chefdk
 ln -s /opt/inspec/bin/inspec ~/.rbenv/shims/inspec
 
@@ -115,6 +116,7 @@ brew install saml2aws
 
 # CLI
 brew install ansible
+brew install ansible-lint
 #pip install -U ansible==$AN_VER
 
 brew install azure-cli
@@ -144,9 +146,6 @@ brew install packer
 
 brew install pipenv
 brew install pre-commit
-# rmtree
-brew tap beeftornado/rmtree
-brew install rmtree
 
 # s5cmd
 brew tap peakgames/s5cmd https://github.com/peakgames/s5cmd
@@ -175,11 +174,11 @@ brew cask install calibre
 #brew cask install dash
 #brew cask install docker
 brew cask install dbeaver-community
-brew cask install filezilla
+#brew cask install filezilla
 #brew cask install flycut
 #brew cask install google-backup-and-sync
 brew cask install google-chrome
-brew cask install insomnia
+#brew cask install insomnia
 brew cask install iterm2
 brew cask install java
 #brew cask install karabiner-elements
@@ -193,7 +192,7 @@ brew cask install slack
 brew cask install vagrant
 brew cask install virtualbox
 brew cask install visual-studio-code
-brew cask install vlc
+#brew cask install vlc
 brew cask install vmware-remote-console
 brew cask install zoomus
 
