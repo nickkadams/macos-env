@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2018.11.08
+i# Updated 2018.11.17
 
 TF_VER="0.11.10"
 RB_VER="2.5.3"
@@ -121,7 +121,7 @@ brew install ansible-lint
 
 brew install azure-cli
 brew install bat
-brew install consul
+#brew install consul
 brew install coreutils
 brew install cli53
 brew install curl
@@ -168,7 +168,7 @@ brew cask install 1password
 brew cask install adobe-acrobat-reader
 #brew cask install adium
 brew cask install alfred
-brew cask install appcleaner
+#brew cask install appcleaner
 brew cask install cacher
 brew cask install calibre
 #brew cask install dash
@@ -184,13 +184,14 @@ brew cask install java
 #brew cask install karabiner-elements
 brew cask install kindle
 #brew cask install microsoft-office
+brew cask install moom
 brew cask install pgadmin4
 #brew cask install postman
 brew cask install powershell
 brew cask install slack
 #brew cask install sourcetree
-brew cask install vagrant
-brew cask install virtualbox
+#brew cask install vagrant
+#brew cask install virtualbox
 brew cask install visual-studio-code
 #brew cask install vlc
 brew cask install vmware-remote-console
