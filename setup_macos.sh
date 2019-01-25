@@ -1,10 +1,10 @@
 #!/bin/bash
-i# Updated 2018.11.17
+# Updated 2019.01.25
 
-TF_VER="0.11.10"
-RB_VER="2.5.3"
+TF_VER="0.11.11"
+RB_VER="2.6.0"
 #PK_VER="1.1.3"
-#AN_VER="2.3.3"
+#AN_VER="2.7.6"
 
 # Passwordless sudo
 me=`id -nu`
@@ -117,6 +117,7 @@ brew install saml2aws
 # CLI
 brew install ansible
 brew install ansible-lint
+pip install pywinrm
 #pip install -U ansible==$AN_VER
 
 brew install azure-cli
@@ -129,12 +130,17 @@ brew install dep
 brew install direnv
 brew install findutils
 brew install go
+
+# aws-sdk-go
+go get github.com/aws/aws-sdk-go
+
 brew install graphviz
 brew install htop
 brew install httpie
 brew install ipcalc
 brew install jq
 brew install jsonlint
+brew install kubernetes-cli
 brew install neovim
 brew install ngrep
 brew install packer
@@ -174,6 +180,7 @@ brew cask install calibre
 #brew cask install dash
 #brew cask install docker
 brew cask install dbeaver-community
+brew cask install figma
 #brew cask install filezilla
 #brew cask install flycut
 #brew cask install google-backup-and-sync
@@ -213,9 +220,9 @@ apm install language-inspec
 apm install language-rust
 apm install language-terraform
 apm install language-yaml-cloudformation
-apm install linter
-apm install linter-packer-validate
-apm install linter-ui-default
+#apm install linter
+#apm install linter-packer-validate
+#apm install linter-ui-default
 
 # code/plugins
 code --install-extension ms-vscode.Go
@@ -231,7 +238,7 @@ echo "format=columns" >> ~/.config/pip/pip.conf
 # pip/plugins
 pip3 install -U boto3
 pip3 install -U flask
-pip3 install -U git+https://github.com/TheJumpCloud/jcapi-python.git#subdirectory=jcapiv2
+#pip3 install -U git+https://github.com/TheJumpCloud/jcapi-python.git#subdirectory=jcapiv2
 pip3 install -U pylint
 pip3 install -U testinfra
 

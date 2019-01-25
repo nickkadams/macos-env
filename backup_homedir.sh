@@ -1,5 +1,5 @@
 #!/bin/bash -eux
-# Updated 2018.09.27
+# Updated 2019.01.23
 
 DATE=`date +%Y-%m-%d`
 ID=`whoami`
@@ -11,8 +11,12 @@ tar -pzcvf ~/Downloads/${DATE}_${ID}.tgz \
     --exclude='Desktop' \
     --exclude='Downloads' \
     --exclude='Library' \
+    --exclude='Music' \
+    --exclude='Pictures' \
     --exclude='Public' \
     --exclude='VirtualBox VMs' \
+    --exclude='*.iso' \
+    --exclude='*.ISO' \
     --exclude='.terraform' \
     --exclude='terraform.tfstate*' \
     --exclude='packer_cache' \
@@ -49,6 +53,7 @@ tar -pzcvf ~/Downloads/${DATE}_${ID}.tgz \
     --exclude='.oh-my-zsh' \
     --exclude='.oracle_jre_usage' \
     --exclude='.ovftool.ssldb' \
+    --exclude='output-*' \
     --exclude='.packer.d' \
     --exclude='.pgadmin' \
     --exclude='.pylint.d' \
