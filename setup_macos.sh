@@ -1,10 +1,10 @@
 #!/bin/bash
-# Updated 2019.01.25
+# Updated 2019.02.19
 
-TF_VER="0.11.11"
-RB_VER="2.6.0"
-#PK_VER="1.1.3"
-#AN_VER="2.7.6"
+tf_ver="0.11.11"
+rb_ver="2.6.1"
+#pk_ver="1.3.4"
+#an_ver="2.7.7"
 
 # Passwordless sudo
 me=`id -nu`
@@ -86,7 +86,7 @@ git config --global http.sslVerify "false"
 
 # tfenv
 brew install tfenv
-tfenv install $TF_VER
+tfenv install $tf_ver
 # setup environment
 mkdir -p ~/.env.d
 chmod 750 ~/.env.d
@@ -97,7 +97,7 @@ iunzip /tmp/tflint.zip -d /usr/local/bin
 
 # rbenv/chefdk
 brew install rbenv
-rbenv install $RB_VER
+rbenv install $rb_ver
 brew install rbenv-chefdk
 brew cask install chef/chef/chefdk
 mkdir -p ~/.chef
@@ -118,7 +118,7 @@ brew install saml2aws
 brew install ansible
 brew install ansible-lint
 pip install pywinrm
-#pip install -U ansible==$AN_VER
+#pip install -U ansible==$an_ver
 
 brew install azure-cli
 brew install bat
@@ -141,14 +141,15 @@ brew install ipcalc
 brew install jq
 brew install jsonlint
 brew install kubernetes-cli
+brew install kubernetes-helm
 brew install neovim
 brew install ngrep
 brew install packer
-#wget https://releases.hashicorp.com/packer/$PK_VER/packer_$PK_VER_darwin_amd64.zip
-#unzip packer_$PK_VER_darwin_amd64.zip
+#wget https://releases.hashicorp.com/packer/$pk_ver/packer_$pk_ver_darwin_amd64.zip
+#unzip packer_$pk_ver_darwin_amd64.zip
 #mv packer /usr/local/bin/
 #packer -v
-#rm -f packer_$PK_VER_darwin_amd64.zip
+#rm -f packer_$pk_ver_darwin_amd64.zip
 
 brew install pipenv
 brew install pre-commit
@@ -220,6 +221,7 @@ apm install language-inspec
 apm install language-rust
 apm install language-terraform
 apm install language-yaml-cloudformation
+apm install linter-ansible-linting
 #apm install linter
 #apm install linter-packer-validate
 #apm install linter-ui-default
