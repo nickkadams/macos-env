@@ -1,7 +1,7 @@
 #!/bin/bash
-# Updated 2019.02.19
+i# Updated 2019.03.08
 
-tf_ver="0.11.11"
+tf_ver="0.11.12"
 rb_ver="2.6.1"
 #pk_ver="1.3.4"
 #an_ver="2.7.7"
@@ -144,6 +144,7 @@ brew install kubernetes-cli
 brew install kubernetes-helm
 brew install neovim
 brew install ngrep
+#brew install openshift-cli
 brew install packer
 #wget https://releases.hashicorp.com/packer/$pk_ver/packer_$pk_ver_darwin_amd64.zip
 #unzip packer_$pk_ver_darwin_amd64.zip
@@ -168,6 +169,7 @@ brew install tmux
 brew install tree
 brew install vim
 brew install wget
+brew install yamllint
 brew install zsh
 
 # GUI
@@ -241,6 +243,7 @@ echo "format=columns" >> ~/.config/pip/pip.conf
 pip3 install -U boto3
 pip3 install -U flask
 #pip3 install -U git+https://github.com/TheJumpCloud/jcapi-python.git#subdirectory=jcapiv2
+pip3 install -U molecule
 pip3 install -U pylint
 pip3 install -U testinfra
 
