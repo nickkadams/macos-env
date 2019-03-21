@@ -1,10 +1,10 @@
 #!/bin/bash
-i# Updated 2019.03.08
+i# Updated 2019.03.15
 
-tf_ver="0.11.12"
-rb_ver="2.6.1"
+tf_ver="0.11.13"
+rb_ver="2.6.2"
 #pk_ver="1.3.4"
-#an_ver="2.7.7"
+#an_ver="2.7.8"
 
 # Passwordless sudo
 me=`id -nu`
