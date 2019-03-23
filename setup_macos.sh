@@ -1,5 +1,5 @@
 #!/bin/bash
-i# Updated 2019.03.15
+i# Updated 2019.03.23
 
 tf_ver="0.11.13"
 rb_ver="2.6.2"
@@ -140,7 +140,8 @@ brew install httpie
 brew install ipcalc
 brew install jq
 brew install jsonlint
-brew install kubernetes-cli
+brew install keybase
+brew install kubernetes-helm
 brew install kubernetes-helm
 brew install neovim
 brew install ngrep
