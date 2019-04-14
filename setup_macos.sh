@@ -1,5 +1,5 @@
 #!/bin/bash
-i# Updated 2019.03.23
+# Updated 2019.04.14
 
 tf_ver="0.11.13"
 rb_ver="2.6.2"
@@ -128,6 +128,7 @@ brew install cli53
 brew install curl
 brew install dep
 brew install direnv
+brew install exa
 brew install findutils
 brew install go
 
