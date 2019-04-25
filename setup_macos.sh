@@ -1,10 +1,10 @@
 #!/bin/bash
-# Updated 2019.04.14
+# Updated 2019.04.25
 
 tf_ver="0.11.13"
-rb_ver="2.6.2"
-#pk_ver="1.3.4"
-#an_ver="2.7.8"
+rb_ver="2.6.3"
+pk_ver="1.3.5"
+#an_ver="2.7.10"
 
 # Passwordless sudo
 me=`id -nu`
@@ -147,12 +147,12 @@ brew install kubernetes-helm
 brew install neovim
 brew install ngrep
 #brew install openshift-cli
-brew install packer
-#wget https://releases.hashicorp.com/packer/$pk_ver/packer_$pk_ver_darwin_amd64.zip
-#unzip packer_$pk_ver_darwin_amd64.zip
-#mv packer /usr/local/bin/
-#packer -v
-#rm -f packer_$pk_ver_darwin_amd64.zip
+#brew install packer
+wget https://releases.hashicorp.com/packer/"$pk_ver"/packer_"$pk_ver"_darwin_amd64.zip
+unzip packer_"$pk_ver"_darwin_amd64.zip
+mv packer /usr/local/bin/
+packer -v
+rm -f packer_"$pk_ver"_darwin_amd64.zip
 
 brew install pipenv
 brew install pre-commit
