@@ -1,17 +1,17 @@
 #!/bin/bash
-# Updated 2019.06.17
+# Updated 2019.06.30
 
-tf_ver="0.11.13"
+tf_ver="0.12.3"
 rb_ver="2.6.3"
 #pk_ver="1.4.1"
 #an_ver="2.7.10"
 
-# Passwordless sudo
+# passwordless sudo
 me=`id -nu`
 echo "$me ALL=(ALL) NOPASSWD: ALL" | sudo tee /private/etc/sudoers.d/$me
 sudo chmod 440 /private/etc/sudoers.d/$me
 
-# Set hostname
+# set hostname
 clear
 echo "Enter the FQDN for your mac?"
 read fqdn
@@ -22,7 +22,7 @@ sudo scutil --set ComputerName $fqdn
 sudo scutil --set LocalHostName $local
 dscacheutil -flushcache
 
-# Disable IPv6
+# disable IPv6
 #sudo networksetup -listallhardwareports
 sudo networksetup -setv6off Wi-Fi
 sudo networksetup -setv6off Ethernet
@@ -50,7 +50,7 @@ done
 # unhide ~/Library
 sudo chflags nohidden ~/Library/
 
-# Homebrew check
+# homebrew check
 check=$((which brew) 2>&1)
 #echo $check
 str="brew not found"
@@ -58,7 +58,7 @@ while [[ "$check" == "$str" ]]; do
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 done
 
-# Create repo dir
+# create repo dir
 mkdir -p ~/code
 
 # Check for updates
@@ -87,9 +87,20 @@ git config --global http.sslVerify "false"
 # tfenv
 brew install tfenv
 tfenv install $tf_ver
+
 # setup environment
 mkdir -p ~/.env.d
-chmod 750 ~/.env.d
+chmod 700 ~/.env.d
+cat << EOF > ~/.env.d/sample
+export AWS_HOME=/Users/$me/.aws
+export AWS_PROFILE=sample
+export TF_VAR_aws_profile=sample
+export TF_VAR_shared_key_path=/Users/$me/.ssh/sample.pem
+export TF_VAR_shared_key_name=sample
+#export TF_VAR_chef_validator_key_path=/Users/$me/.chef/sample.pem
+#export TF_VAR_chef_secret_key_path=/Users/$me/.chef/encrypted_data_bag_secret
+EOF
+chmod 600 ~/.env.d/sample
 
 # tflint
 curl -L -o /tmp/tflint.zip https://github.com/wata727/tflint/releases/download/v0.7.2/tflint_darwin_amd64.zip
@@ -142,7 +153,6 @@ brew install ipcalc
 brew install jq
 brew install jsonlint
 brew install keybase
-brew install kubernetes-helm
 brew install kubernetes-helm
 brew install neovim
 brew install ngrep
@@ -204,6 +214,7 @@ brew cask install slack
 #brew cask install sourcetree
 #brew cask install vagrant
 #brew cask install virtualbox
+#brew cask install virtualbox-extension-pack
 brew cask install visual-studio-code
 #brew cask install vlc
 brew cask install vmware-remote-console
@@ -264,15 +275,15 @@ defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</
 # restart
 killall Dock
 
-# Disable sleep
+# disable sleep
 sudo systemsetup -setcomputersleep Never
 
-# Enable screen sharing
+# enable screen sharing
 sudo defaults write /var/db/launchd.db/com.apple.launchd/overrides.plist com.apple.screensharing -dict Disabled -bool false
 sudo launchctl load /System/Library/LaunchDaemons/com.apple.screensharing.plist
 sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.screensharing.plist
 
-# Cleanup
+# cleanup
 brew cleanup
 
 # oh my zsh
