@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2019.06.30
+# Updated 2019.07.02
 
 tf_ver="0.12.3"
 rb_ver="2.6.3"
@@ -28,6 +28,7 @@ sudo networksetup -setv6off Wi-Fi
 sudo networksetup -setv6off Ethernet
 sudo networksetup -setv6off "Bluetooth PAN"
 sudo networksetup -setv6off "Thunderbolt Bridge"
+#sudo networksetup -setv6off "USB 10/100/1000 LAN"
 
 # SMB performance tuning
 sudo defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
