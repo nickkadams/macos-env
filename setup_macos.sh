@@ -104,8 +104,10 @@ EOF
 chmod 600 ~/.env.d/sample
 
 # tflint
-curl -L -o /tmp/tflint.zip https://github.com/wata727/tflint/releases/download/v0.7.2/tflint_darwin_amd64.zip
-iunzip /tmp/tflint.zip -d /usr/local/bin
+brew tap wata727/tflint
+brew install tflint
+# curl -L -o /tmp/tflint.zip https://github.com/wata727/tflint/releases/download/v0.7.2/tflint_darwin_amd64.zip
+# unzip /tmp/tflint.zip -d /usr/local/bin
 
 # rbenv/chefdk
 brew install rbenv
