@@ -1,7 +1,7 @@
 #!/bin/bash
-# Updated 2019.07.02
+# Updated 2019.07.26
 
-tf_ver="0.12.3"
+tf_ver="0.12.5"
 rb_ver="2.6.3"
 #pk_ver="1.4.1"
 #an_ver="2.7.10"
@@ -96,8 +96,8 @@ cat << EOF > ~/.env.d/sample
 export AWS_HOME=/Users/$me/.aws
 export AWS_PROFILE=sample
 export TF_VAR_aws_profile=sample
-export TF_VAR_shared_key_path=/Users/$me/.ssh/sample.pem
-export TF_VAR_shared_key_name=sample
+export TF_VAR_key_path=/Users/$me/.ssh/sample.pem
+export TF_VAR_key_name=sample
 #export TF_VAR_chef_validator_key_path=/Users/$me/.chef/sample.pem
 #export TF_VAR_chef_secret_key_path=/Users/$me/.chef/encrypted_data_bag_secret
 EOF
