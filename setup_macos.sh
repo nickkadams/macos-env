@@ -1,10 +1,10 @@
 #!/bin/bash
-# Updated 2019.08.02
+# Updated 2019.08.23
 
 tf_ver="0.12.6"
 rb_ver="2.6.3"
-#pk_ver="1.4.1"
-#an_ver="2.7.10"
+#pk_ver="1.4.3"
+#an_ver="2.8.4"
 
 # passwordless sudo
 me=`id -nu`
@@ -128,7 +128,7 @@ brew install awscli
 brew tap versent/homebrew-taps
 brew install saml2aws
 
-# CLI
+# Ansible
 brew install ansible
 brew install ansible-lint
 pip install pywinrm
@@ -142,6 +142,11 @@ brew install cli53
 brew install curl
 brew install dep
 brew install direnv
+
+# EKS
+brew tap weaveworks/tap
+brew install weaveworks/tap/eksctl
+
 brew install exa
 brew install findutils
 brew install go
@@ -213,6 +218,7 @@ brew cask install moom
 brew cask install pgadmin4
 #brew cask install postman
 brew cask install powershell
+#brew cask install scap-workbench
 brew cask install slack
 #brew cask install sourcetree
 #brew cask install vagrant
@@ -221,6 +227,7 @@ brew cask install slack
 brew cask install visual-studio-code
 #brew cask install vlc
 brew cask install vmware-remote-console
+#brew cask install wireshark
 brew cask install zoomus
 
 # atom/plugins
