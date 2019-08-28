@@ -1,7 +1,7 @@
 #!/bin/bash
-# Updated 2019.08.23
+# Updated 2019.08.28
 
-tf_ver="0.12.6"
+tf_ver="0.12.7"
 rb_ver="2.6.3"
 #pk_ver="1.4.3"
 #an_ver="2.8.4"
@@ -201,8 +201,9 @@ brew cask install alfred
 brew cask install cacher
 brew cask install calibre
 #brew cask install dash
-#brew cask install docker
 brew cask install dbeaver-community
+#brew cask install docker
+#brew cask install drawio
 brew cask install figma
 #brew cask install filezilla
 #brew cask install flycut
