@@ -1,8 +1,8 @@
 #!/bin/bash
-# Updated 2019.09.06
+# Updated 2019.12.16
 
-tf_ver="0.12.8"
-rb_ver="2.6.3"
+tf_ver="0.12.18"
+rb_ver="2.6.5"
 #pk_ver="1.4.3"
 #an_ver="2.8.4"
 
@@ -158,6 +158,7 @@ brew install graphviz
 brew install htop
 brew install httpie
 brew install ipcalc
+brew install jfrog-cli-go
 brew install jq
 brew install jsonlint
 brew install keybase
