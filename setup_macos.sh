@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2019.12.16
+# Updated 2019.12.19
 
 tf_ver="0.12.18"
 rb_ver="2.6.5"
@@ -71,6 +71,9 @@ brew install cask
 
 # git
 brew install git
+brew install git-lfs
+git lfs install
+git lfs install --system
 clear
 echo "git: First and Last name?"
 read name
