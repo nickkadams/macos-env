@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2019.12.19
+# Updated 2020.01.04
 
 tf_ver="0.12.18"
 rb_ver="2.6.5"
@@ -139,9 +139,10 @@ pip install pywinrm
 
 brew install azure-cli
 brew install bat
+brew install cfn-lint
+brew install cli53
 #brew install consul
 brew install coreutils
-brew install cli53
 brew install curl
 brew install dep
 brew install direnv
@@ -150,6 +151,7 @@ brew install direnv
 brew tap weaveworks/tap
 brew install weaveworks/tap/eksctl
 
+brew install elinks
 brew install exa
 brew install findutils
 brew install go
