@@ -1,10 +1,10 @@
 #!/bin/bash
-# Updated 2020.01.04
+# Updated 2020.01.16
 
-tf_ver="0.12.18"
-rb_ver="2.6.5"
-#pk_ver="1.4.3"
-#an_ver="2.8.4"
+tf_ver="0.12.19"
+rb_ver="2.7.0"
+#pk_ver="1.5.1"
+#an_ver="2.9.3"
 
 # passwordless sudo
 me=`id -nu`
@@ -159,6 +159,7 @@ brew install go
 # aws-sdk-go
 go get github.com/aws/aws-sdk-go
 
+brew install gnu-sed
 brew install graphviz
 brew install htop
 brew install httpie
