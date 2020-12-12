@@ -276,6 +276,9 @@ pip3 install -U molecule
 pip3 install -U pylint
 pip3 install -U testinfra
 
+# logitech-options
+brew install homebrew/cask-drivers/logitech-options
+
 # Dock
 # delete
 defaults delete com.apple.dock persistent-apps
