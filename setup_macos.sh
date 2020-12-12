@@ -1,10 +1,8 @@
 #!/bin/bash
-# Updated 2020.01.16
+# Updated 2020.12.12
 
-tf_ver="0.12.19"
-rb_ver="2.7.0"
-#pk_ver="1.5.1"
-#an_ver="2.9.3"
+tf_ver="0.13.5"
+rb_ver="2.7.2"
 
 # passwordless sudo
 me=`id -nu`
@@ -12,13 +10,14 @@ echo "$me ALL=(ALL) NOPASSWD: ALL" | sudo tee /private/etc/sudoers.d/$me
 sudo chmod 440 /private/etc/sudoers.d/$me
 
 # set hostname
-clear
-echo "Enter the FQDN for your mac?"
-read fqdn
-local=`echo $fqdn | cut -f1 -d.`
+# clear
+# echo "Enter the FQDN for your mac?"
+# read fqdn
+# local=`echo $fqdn | cut -f1 -d.`
+local=`ioreg -l | grep IOPlatformSerialNumber | cut -f4 -d'"' | tr '[:upper:]' '[:lower:]'`
 
-sudo scutil --set HostName $fqdn
-sudo scutil --set ComputerName $fqdn
+sudo scutil --set HostName $local # $fqdn
+sudo scutil --set ComputerName $local # $fqdn
 sudo scutil --set LocalHostName $local
 dscacheutil -flushcache
 
@@ -28,7 +27,7 @@ sudo networksetup -setv6off Wi-Fi
 sudo networksetup -setv6off Ethernet
 sudo networksetup -setv6off "Bluetooth PAN"
 sudo networksetup -setv6off "Thunderbolt Bridge"
-#sudo networksetup -setv6off "USB 10/100/1000 LAN"
+# sudo networksetup -setv6off "USB 10/100/1000 LAN"
 
 # SMB performance tuning
 sudo defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
@@ -56,7 +55,7 @@ check=$((which brew) 2>&1)
 #echo $check
 str="brew not found"
 while [[ "$check" == "$str" ]]; do
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 done
 
 # create repo dir
@@ -86,9 +85,12 @@ read username
 git config --global user.username "$username"
 git config --global core.editor vim
 git config --global http.sslVerify "false"
+git config --global credential.helper cache
+git config --global init.defaultBranch main
 #git config --list
 
 # tfenv
+brew install keybase
 brew install tfenv
 tfenv install $tf_ver
 
@@ -99,32 +101,32 @@ cat << EOF > ~/.env.d/sample
 export AWS_HOME=/Users/$me/.aws
 export AWS_PROFILE=sample
 export TF_VAR_aws_profile=sample
-export TF_VAR_key_path=/Users/$me/.ssh/sample.pem
-export TF_VAR_key_name=sample
+export TF_VAR_aws_region=us-east-1
+export TF_VAR_shared_key_name=sample
+export TF_VAR_shared_key_path=/Users/$me/.ssh/sample.pem
+#export TF_VAR_bastion_host=1.2.3.4
 #export TF_VAR_chef_validator_key_path=/Users/$me/.chef/sample.pem
 #export TF_VAR_chef_secret_key_path=/Users/$me/.chef/encrypted_data_bag_secret
 EOF
 chmod 600 ~/.env.d/sample
 
 # tflint
-brew tap wata727/tflint
 brew install tflint
 # curl -L -o /tmp/tflint.zip https://github.com/wata727/tflint/releases/download/v0.7.2/tflint_darwin_amd64.zip
 # unzip /tmp/tflint.zip -d /usr/local/bin
 
-# rbenv/chefdk
+# rbenv
 brew install rbenv
 rbenv install $rb_ver
-brew install rbenv-chefdk
-brew cask install chef/chef/chefdk
-mkdir -p ~/.chef
-mkdir -p "$(rbenv root)/versions/chefdk"
-rbenv shell chefdk
-rbenv rehash
+#rbenv rehash
 #rbenv which ruby
-brew cask install chef/chef/inspec
-mv -f ~/.rbenv/shims/inspec ~/.rbenv/shims/inspec-chefdk
-ln -s /opt/inspec/bin/inspec ~/.rbenv/shims/inspec
+
+# chef
+#brew install --cask chef-workstation
+#brew install rbenv-chefdk
+#brew install --cask chef/chef/inspec
+#mv -f ~/.rbenv/shims/inspec ~/.rbenv/shims/inspec-chefdk
+#ln -s /opt/inspec/bin/inspec ~/.rbenv/shims/inspec
 
 # saml2aws
 brew install awscli
@@ -135,9 +137,8 @@ brew install saml2aws
 brew install ansible
 brew install ansible-lint
 pip install pywinrm
-#pip install -U ansible==$an_ver
 
-brew install azure-cli
+#brew install azure-cli
 brew install bat
 brew install cfn-lint
 brew install cli53
@@ -146,6 +147,7 @@ brew install coreutils
 brew install curl
 brew install dep
 brew install direnv
+#brew install doctl
 
 # EKS
 brew tap weaveworks/tap
@@ -160,25 +162,18 @@ brew install go
 go get github.com/aws/aws-sdk-go
 
 brew install gnu-sed
-brew install graphviz
+#brew install graphviz
 brew install htop
 brew install httpie
 brew install ipcalc
-brew install jfrog-cli-go
+#brew install jfrog-cli-go
 brew install jq
 brew install jsonlint
-brew install keybase
 brew install kubernetes-helm
-brew install neovim
+#brew install neovim
 brew install ngrep
 #brew install openshift-cli
 brew install packer
-#wget https://releases.hashicorp.com/packer/"$pk_ver"/packer_"$pk_ver"_darwin_amd64.zip
-#unzip packer_"$pk_ver"_darwin_amd64.zip
-#mv packer /usr/local/bin/
-#packer -v
-#rm -f packer_"$pk_ver"_darwin_amd64.zip
-
 brew install pipenv
 brew install pre-commit
 
@@ -186,75 +181,78 @@ brew install pre-commit
 brew tap peakgames/s5cmd https://github.com/peakgames/s5cmd
 brew install s5cmd
 
-brew install https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb
+# sshpass
+brew install hudochenkov/sshpass/sshpass
+
 brew install sshuttle
 brew install sslyze
 brew install terraform-docs
+brew install tflint
 brew install the_silver_searcher
 brew install tmate
 brew install tmux
 brew install tree
+#brew install vault
 brew install vim
 brew install wget
 brew install yamllint
 brew install zsh
 
 # GUI
-brew cask install 1password
-brew cask install adobe-acrobat-reader
-#brew cask install adium
-brew cask install alfred
-#brew cask install appcleaner
-brew cask install cacher
-brew cask install calibre
-#brew cask install dash
-brew cask install dbeaver-community
-#brew cask install docker
-#brew cask install drawio
-brew cask install figma
-#brew cask install filezilla
-#brew cask install flycut
-#brew cask install google-backup-and-sync
-brew cask install google-chrome
-#brew cask install insomnia
-brew cask install iterm2
-brew cask install java
-#brew cask install karabiner-elements
-brew cask install kindle
-#brew cask install microsoft-office
-brew cask install moom
-brew cask install pgadmin4
-#brew cask install postman
-brew cask install powershell
-#brew cask install scap-workbench
-brew cask install slack
-#brew cask install sourcetree
-#brew cask install vagrant
-#brew cask install virtualbox
-#brew cask install virtualbox-extension-pack
-brew cask install visual-studio-code
-#brew cask install vlc
-brew cask install vmware-remote-console
-#brew cask install wireshark
-brew cask install zoomus
+brew install --cask 1password
+brew install --cask adobe-acrobat-reader
+#brew install --cask adium
+brew install --cask alfred
+#brew install --cask appcleaner
+brew install --cask cacher
+#brew install --cask calibre
+#brew install --cask dash
+#brew install --cask dbeaver-community
+brew install --cask docker
+brew install --cask drawio
+#brew install --cask figma
+#brew install --cask filezilla
+brew install --cask firefox
+#brew install --cask flycut
+#brew install --cask google-backup-and-sync
+brew install --cask google-chrome
+#brew install --cask insomnia
+brew install --cask iterm2
+#brew install --cask karabiner-elements
+#brew install --cask kindle
+#brew install --cask microsoft-office
+brew install --cask moom
+brew install --cask pgadmin4
+brew install --cask postman
+brew install --cask powershell
+#brew install --cask scap-workbench
+brew install --cask slack
+#brew install --cask sourcetree
+#brew install --cask vagrant
+#brew install --cask virtualbox
+#brew install --cask virtualbox-extension-pack
+brew install --cask visual-studio-code
+#brew install --cask vlc
+#brew install --cask wireshark
+brew install --cask zoomus
 
 # atom/plugins
-brew cask install atom
-apm install auto-update-packages
-apm install busy-signal
-apm install click-link
-apm install duplicate-removal
-apm install git-blame
-apm install git-plus
-apm install go-plus
-apm install highlight-selected
-apm install intentions
-apm install language-chef
-apm install language-inspec
-apm install language-rust
-apm install language-terraform
-apm install language-yaml-cloudformation
-apm install linter-ansible-linting
+#brew install --cask atom
+#apm install auto-update-packages
+#apm install busy-signal
+#apm install click-link
+#apm install duplicate-removal
+#apm install git-blame
+#apm install git-plus
+#apm install go-plus
+#apm install highlight-selected
+#apm install intentions
+#apm install language-chef
+#apm install language-inspec
+#apm install language-rust
+#apm install language-terraform
+#apm install language-yaml-cloudformation
+#apm install linter-ansible-linting
 #apm install linter
 #apm install linter-packer-validate
 #apm install linter-ui-default
@@ -305,4 +303,4 @@ sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.screensharing.pli
 brew cleanup
 
 # oh my zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+#sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
