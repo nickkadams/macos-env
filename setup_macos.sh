@@ -52,10 +52,11 @@ sudo chflags nohidden ~/Library/
 
 # homebrew check
 check=$((which brew) 2>&1)
-#echo $check
+echo $check
 str="brew not found"
 while [[ "$check" == "$str" ]]; do
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  exit 1
 done
 
 # create repo dir
@@ -136,7 +137,8 @@ brew install saml2aws
 # Ansible
 brew install ansible
 brew install ansible-lint
-pip install pywinrm
+pip3 install --user --upgrade pip
+pip3 install pywinrm
 
 #brew install azure-cli
 brew install bat
@@ -263,9 +265,6 @@ brew install --cask visual-studio-code
 #apm install linter-packer-validate
 #apm install linter-ui-default
 
-# code/plugins
-code --install-extension ms-vscode.Go
-
 # Go debugger
 go get -u github.com/derekparker/delve/cmd/dlv
 
@@ -293,7 +292,8 @@ defaults delete com.apple.dock persistent-others
 # add
 defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Google Chrome.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
 defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/iTerm.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
-defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Atom.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Visual Studio Code.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+#defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Atom.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
 defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Slack.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
 defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/zoom.us.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
 
