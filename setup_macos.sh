@@ -204,6 +204,7 @@ brew install --cask adobe-acrobat-reader
 #brew install --cask adium
 brew install --cask alfred
 #brew install --cask appcleaner
+#brew install --cask bluejeans
 brew install --cask cacher
 #brew install --cask calibre
 #brew install --cask dash
@@ -221,6 +222,7 @@ brew install --cask iterm2
 #brew install --cask karabiner-elements
 #brew install --cask kindle
 #brew install --cask microsoft-office
+#brew install --cask microsoft-teams
 brew install --cask moom
 brew install --cask pgadmin4
 brew install --cask postman
@@ -231,10 +233,14 @@ brew install --cask slack
 #brew install --cask vagrant
 #brew install --cask virtualbox
 #brew install --cask virtualbox-extension-pack
-brew install --cask visual-studio-code
 #brew install --cask vlc
+#brew install --cask webex-meetings
 #brew install --cask wireshark
 brew install --cask zoomus
+
+# code/plugins
+brew install --cask visual-studio-code
+#code --install-extension
 
 # atom/plugins
 #brew install --cask atom
