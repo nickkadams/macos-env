@@ -10,10 +10,10 @@ echo "$me ALL=(ALL) NOPASSWD: ALL" | sudo tee /private/etc/sudoers.d/$me
 sudo chmod 440 /private/etc/sudoers.d/$me
 
 # set hostname
-# clear
-# echo "Enter the FQDN for your mac?"
-# read fqdn
-# local=`echo $fqdn | cut -f1 -d.`
+#clear
+#echo "Enter the FQDN for your mac?"
+#read fqdn
+#local=`echo $fqdn | cut -f1 -d.`
 local=`ioreg -l | grep IOPlatformSerialNumber | cut -f4 -d'"' | tr '[:upper:]' '[:lower:]'`
 
 sudo scutil --set HostName $local # $fqdn
@@ -27,7 +27,7 @@ sudo networksetup -setv6off Wi-Fi
 sudo networksetup -setv6off Ethernet
 sudo networksetup -setv6off "Bluetooth PAN"
 sudo networksetup -setv6off "Thunderbolt Bridge"
-# sudo networksetup -setv6off "USB 10/100/1000 LAN"
+#sudo networksetup -setv6off "USB 10/100/1000 LAN"
 
 # SMB performance tuning
 sudo defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
@@ -113,8 +113,8 @@ chmod 600 ~/.env.d/sample
 
 # tflint
 brew install tflint
-# curl -L -o /tmp/tflint.zip https://github.com/wata727/tflint/releases/download/v0.7.2/tflint_darwin_amd64.zip
-# unzip /tmp/tflint.zip -d /usr/local/bin
+#curl -L -o /tmp/tflint.zip https://github.com/wata727/tflint/releases/download/v0.7.2/tflint_darwin_amd64.zip
+#unzip /tmp/tflint.zip -d /usr/local/bin
 
 # rbenv
 brew install rbenv
