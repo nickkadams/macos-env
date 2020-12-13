@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2020.12.12
+# Updated 2020.12.13
 
 tf_ver="0.13.5"
 rb_ver="2.7.2"
@@ -225,7 +225,7 @@ brew install --cask iterm2
 #brew install --cask kindle
 #brew install --cask microsoft-office
 #brew install --cask microsoft-teams
-brew install --cask moom
+#brew install --cask moom
 brew install --cask pgadmin4
 brew install --cask postman
 brew install --cask powershell
