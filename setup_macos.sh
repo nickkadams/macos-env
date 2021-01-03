@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2020.12.13
+# Updated 2021.01.03
 
 tf_ver="0.13.5"
 rb_ver="2.7.2"
@@ -202,6 +202,7 @@ brew install zsh
 
 # GUI
 brew install --cask 1password
+brew install --cask 1password-cli
 brew install --cask adobe-acrobat-reader
 #brew install --cask adium
 brew install --cask alfred
