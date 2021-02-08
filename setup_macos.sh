@@ -1,7 +1,7 @@
 #!/bin/bash
 # Updated 2021.02.08
 
-tf_ver="0.13.5"
+tf_ver="0.14.6"
 rb_ver="2.7.2"
 
 # passwordless sudo
