@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2021.01.03
+# Updated 2021.02.08
 
 tf_ver="0.13.5"
 rb_ver="2.7.2"
@@ -117,8 +117,8 @@ brew install tflint
 #unzip /tmp/tflint.zip -d /usr/local/bin
 
 # rbenv
-brew install rbenv
-rbenv install $rb_ver
+#brew install rbenv
+#rbenv install $rb_ver
 #rbenv rehash
 #rbenv which ruby
 
@@ -140,6 +140,7 @@ brew install ansible-lint
 pip3 install --user --upgrade pip
 pip3 install pywinrm
 
+brew install asdf
 #brew install azure-cli
 brew install bat
 brew install cfn-lint
