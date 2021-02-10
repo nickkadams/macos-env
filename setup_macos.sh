@@ -185,6 +185,8 @@ brew install pre-commit
 brew tap peakgames/s5cmd https://github.com/peakgames/s5cmd
 brew install s5cmd
 
+brew install semgrep
+
 # sshpass
 brew install hudochenkov/sshpass/sshpass
 
