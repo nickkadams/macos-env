@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2021.02.08
+# Updated 2021.02.10
 
 tf_ver="0.14.6"
 rb_ver="2.7.2"
@@ -191,6 +191,7 @@ brew install sshuttle
 brew install sslyze
 brew install terraform-docs
 brew install tflint
+brew install tfsec
 brew install the_silver_searcher
 brew install tmate
 brew install tmux
