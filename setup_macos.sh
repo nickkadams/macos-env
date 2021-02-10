@@ -122,6 +122,9 @@ brew install tflint
 #rbenv rehash
 #rbenv which ruby
 
+# gems 
+# gem install brakeman
+
 # chef
 #brew install --cask chef-workstation
 #brew install rbenv-chefdk
