@@ -166,6 +166,7 @@ go get github.com/aws/aws-sdk-go
 
 brew install gnu-sed
 #brew install graphviz
+brew install hadolint
 brew install htop
 brew install httpie
 brew install ipcalc
