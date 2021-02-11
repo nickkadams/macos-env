@@ -196,6 +196,7 @@ brew install hudochenkov/sshpass/sshpass
 
 brew install sshuttle
 brew install sslyze
+brew install shellcheck
 brew install terraform-docs
 brew install tflint
 brew install tfsec
