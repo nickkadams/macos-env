@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2021.02.10
+# Updated 2021.02.11
 
 tf_ver="0.14.6"
 rb_ver="2.7.2"
@@ -162,6 +162,7 @@ brew install weaveworks/tap/eksctl
 brew install elinks
 brew install exa
 brew install findutils
+brew install fzf
 brew install go
 
 # aws-sdk-go
