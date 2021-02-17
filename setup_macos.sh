@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2021.02.11
+# Updated 2021.02.17
 
 tf_ver="0.14.6"
 rb_ver="2.7.2"
@@ -204,6 +204,7 @@ brew install the_silver_searcher
 brew install tmate
 brew install tmux
 brew install tree
+brew install aquasecurity/trivy/trivy
 #brew install vault
 brew install vim
 brew install wget
