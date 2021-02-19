@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2021.02.17
+# Updated 2021.02.19
 
 tf_ver="0.14.6"
 rb_ver="2.7.2"
@@ -250,7 +250,7 @@ brew install --cask slack
 #brew install --cask vlc
 #brew install --cask webex-meetings
 #brew install --cask wireshark
-brew install --cask zoomus
+brew install --cask zoom
 
 # code/plugins
 brew install --cask visual-studio-code
