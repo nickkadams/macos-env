@@ -1,8 +1,8 @@
 #!/bin/bash
-# Updated 2021.02.19
+# Updated 2021.05.13
 
-tf_ver="0.14.6"
-rb_ver="2.7.2"
+tf_ver="0.15.3"
+rb_ver="2.7.3"
 
 # passwordless sudo
 me=`id -nu`
@@ -197,6 +197,16 @@ brew install hudochenkov/sshpass/sshpass
 brew install sshuttle
 brew install sslyze
 brew install shellcheck
+
+# steampipe
+brew tap turbot/tap
+brew install steampipe
+steampipe plugin install aws
+steampipe plugin install github
+steampipe plugin install kubernetes
+steampipe plugin install net
+steampipe plugin install whois
+
 brew install terraform-docs
 brew install tflint
 brew install tfsec
