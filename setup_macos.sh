@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2021.05.13
+# Updated 2021.06.07
 
 tf_ver="0.15.3"
 rb_ver="2.7.3"
@@ -184,6 +184,7 @@ brew install ngrep
 brew install packer
 brew install pipenv
 brew install pre-commit
+brew install python-tk
 
 # s5cmd
 brew tap peakgames/s5cmd https://github.com/peakgames/s5cmd
