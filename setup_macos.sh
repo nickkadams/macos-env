@@ -1,7 +1,7 @@
 #!/bin/bash
-# Updated 2021.06.07
+# Updated 2021.06.21
 
-tf_ver="0.15.3"
+tf_ver="1.0.0"
 rb_ver="2.7.3"
 
 # passwordless sudo
@@ -88,6 +88,7 @@ git config --global core.editor vim
 git config --global http.sslVerify "false"
 git config --global credential.helper cache
 git config --global init.defaultBranch main
+git config --global url."https://github.com/".insteadOf ssh://git@github.com/
 #git config --list
 
 # tfenv
@@ -266,27 +267,6 @@ brew install --cask zoom
 # code/plugins
 brew install --cask visual-studio-code
 #code --install-extension
-
-# atom/plugins
-#brew install --cask atom
-#apm install auto-update-packages
-#apm install busy-signal
-#apm install click-link
-#apm install duplicate-removal
-#apm install git-blame
-#apm install git-plus
-#apm install go-plus
-#apm install highlight-selected
-#apm install intentions
-#apm install language-chef
-#apm install language-inspec
-#apm install language-rust
-#apm install language-terraform
-#apm install language-yaml-cloudformation
-#apm install linter-ansible-linting
-#apm install linter
-#apm install linter-packer-validate
-#apm install linter-ui-default
 
 # Go debugger
 go get -u github.com/derekparker/delve/cmd/dlv
