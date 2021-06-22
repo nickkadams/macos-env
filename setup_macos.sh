@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2021.06.21
+# Updated 2021.06.22
 
 tf_ver="1.0.0"
 rb_ver="2.7.3"
