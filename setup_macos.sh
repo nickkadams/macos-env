@@ -171,6 +171,11 @@ go get github.com/aws/aws-sdk-go
 
 brew install gnu-sed
 #brew install graphviz
+
+# grype
+brew tap anchore/grype
+brew install grype
+
 brew install hadolint
 brew install htop
 brew install httpie
@@ -208,6 +213,10 @@ steampipe plugin install github
 steampipe plugin install kubernetes
 steampipe plugin install net
 steampipe plugin install whois
+
+# syft
+brew tap anchore/syft
+brew install syft
 
 brew install terraform-docs
 brew install tflint
