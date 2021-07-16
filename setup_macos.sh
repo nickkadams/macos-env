@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2021.06.22
+# Updated 2021.07.16
 
 tf_ver="1.0.0"
 rb_ver="2.7.3"
@@ -147,6 +147,7 @@ pip3 install pywinrm
 brew install asdf
 #brew install azure-cli
 brew install bat
+brew install cfn-flip
 brew install cfn-lint
 brew install cli53
 #brew install consul
