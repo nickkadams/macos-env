@@ -1,8 +1,8 @@
 #!/bin/bash
-# Updated 2021.07.16
+# Updated 2021.08.12
 
-tf_ver="1.0.0"
-rb_ver="2.7.3"
+tf_ver="1.0.4"
+rb_ver="2.7.4"
 
 # passwordless sudo
 me=`id -nu`
@@ -153,7 +153,7 @@ brew install cli53
 #brew install consul
 brew install coreutils
 brew install curl
-brew install dep
+#brew install dep
 brew install direnv
 #brew install doctl
 
