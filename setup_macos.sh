@@ -197,6 +197,7 @@ brew install python-tk
 brew tap peakgames/s5cmd https://github.com/peakgames/s5cmd
 brew install s5cmd
 
+brew install shellcheck
 brew install semgrep
 
 # sshpass
