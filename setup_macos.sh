@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2021.08.12
+# Updated 2021.08.20
 
 tf_ver="1.0.4"
 rb_ver="2.7.4"
@@ -197,15 +197,14 @@ brew install python-tk
 brew tap peakgames/s5cmd https://github.com/peakgames/s5cmd
 brew install s5cmd
 
-brew install shellcheck
 brew install semgrep
+brew install shellcheck
 
 # sshpass
 brew install hudochenkov/sshpass/sshpass
 
 brew install sshuttle
 brew install sslyze
-brew install shellcheck
 
 # steampipe
 brew tap turbot/tap
