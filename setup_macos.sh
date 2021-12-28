@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2021.08.20
+# Updated 2021.12.28
 
 tf_ver="1.0.4"
 rb_ver="2.7.4"
@@ -185,6 +185,9 @@ brew install ipcalc
 brew install jq
 brew install jsonlint
 brew install kubernetes-helm
+brew install libpq
+brew link --force libpq
+
 #brew install neovim
 brew install ngrep
 #brew install openshift-cli
