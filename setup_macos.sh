@@ -1,8 +1,8 @@
 #!/bin/bash
 # Updated 2021.12.28
 
-tf_ver="1.0.4"
-rb_ver="2.7.4"
+tf_ver="1.1.2"
+rb_ver="3.0.3"
 
 # passwordless sudo
 me=`id -nu`
