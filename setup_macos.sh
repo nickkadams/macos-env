@@ -1,8 +1,8 @@
 #!/bin/bash
-# Updated 2021.12.28
+# Updated 2022.01.31
 
-tf_ver="1.1.2"
-rb_ver="3.0.3"
+tf_ver="1.1.4"
+#rb_ver="3.0.3"
 
 # passwordless sudo
 me=`id -nu`
@@ -144,7 +144,7 @@ brew install ansible-lint
 pip3 install --user --upgrade pip
 pip3 install pywinrm
 
-brew install asdf
+#brew install asdf
 #brew install azure-cli
 brew install bat
 brew install cfn-flip
@@ -164,6 +164,7 @@ brew install weaveworks/tap/eksctl
 brew install elinks
 brew install exa
 brew install findutils
+brew install frum
 brew install fzf
 brew install go
 
