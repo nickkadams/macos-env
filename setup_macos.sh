@@ -1,7 +1,7 @@
 #!/bin/bash
-# Updated 2022.01.31
+# Updated 2022.02.28
 
-tf_ver="1.1.4"
+tf_ver="1.1.6"
 #rb_ver="3.0.3"
 
 # passwordless sudo
@@ -189,6 +189,7 @@ brew install kubernetes-helm
 brew install libpq
 brew link --force libpq
 
+brew install minikube
 #brew install neovim
 brew install ngrep
 #brew install openshift-cli
