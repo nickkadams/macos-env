@@ -1,7 +1,7 @@
 #!/bin/bash
-# Updated 2022.02.28
+# Updated 2022.04.05
 
-tf_ver="1.1.6"
+tf_ver="1.1.7"
 #rb_ver="3.0.3"
 
 # passwordless sudo
@@ -185,11 +185,12 @@ brew install ipcalc
 #brew install jfrog-cli-go
 brew install jq
 brew install jsonlint
+#brew install kubectl
 brew install kubernetes-helm
 brew install libpq
 brew link --force libpq
 
-brew install minikube
+#brew install minikube
 #brew install neovim
 brew install ngrep
 #brew install openshift-cli
