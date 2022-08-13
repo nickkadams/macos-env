@@ -1,7 +1,7 @@
 #!/bin/bash
-# Updated 2022.04.05
+# Updated 2022.08.13
 
-tf_ver="1.1.7"
+tf_ver="1.2.7"
 #rb_ver="3.0.3"
 
 # passwordless sudo
@@ -267,6 +267,7 @@ brew install --cask iterm2
 #brew install --cask microsoft-teams
 #brew install --cask moom
 brew install --cask pgadmin4
+brew install --cask pixel-check
 brew install --cask postman
 brew install --cask powershell
 #brew install --cask scap-workbench
