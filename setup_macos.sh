@@ -2,7 +2,7 @@
 # Updated 2022.08.13
 
 tf_ver="1.2.7"
-#rb_ver="3.0.3"
+#rb_ver="3.1.2"
 
 # passwordless sudo
 me=`id -nu`
