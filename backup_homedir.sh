@@ -1,5 +1,5 @@
 #!/bin/bash -eux
-# Updated 2019.01.23
+# Updated 2023.01.28
 
 DATE=`date +%Y-%m-%d`
 ID=`whoami`
@@ -49,6 +49,7 @@ tar -pzcvf ~/Downloads/${DATE}_${ID}.tgz \
     --exclude='.kitchen' \
     --exclude='.lesshst' \
     --exclude='.local' \
+    --exclude='.minikube' \
     --exclude='.npm' \
     --exclude='.oh-my-zsh' \
     --exclude='.oracle_jre_usage' \
