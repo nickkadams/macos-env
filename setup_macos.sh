@@ -149,6 +149,7 @@ pip3 install pywinrm
 brew install bat
 brew install cfn-flip
 brew install cfn-lint
+brew install chamber
 brew install cli53
 #brew install consul
 brew install coreutils
