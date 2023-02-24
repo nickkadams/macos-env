@@ -1,7 +1,7 @@
 #!/bin/bash
-# Updated 2023.01.28
+# Updated 2023.02.24
 
-tf_ver="1.3.7"
+tf_ver="1.3.9"
 #rb_ver="3.2.0"
 
 # passwordless sudo
@@ -181,6 +181,7 @@ brew install grype
 brew install hadolint
 brew install htop
 brew install httpie
+brew install hurl
 brew install ipcalc
 #brew install jfrog-cli-go
 brew install jq
