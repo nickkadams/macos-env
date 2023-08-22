@@ -1,8 +1,8 @@
 #!/bin/bash
-# Updated 2023.02.24
+# Updated 2023.08.22
 
-tf_ver="1.3.9"
-#rb_ver="3.2.0"
+tf_ver="1.5.5"
+#rb_ver="3.2.2"
 
 # passwordless sudo
 me=`id -nu`
@@ -187,6 +187,7 @@ brew install ipcalc
 #brew install jfrog-cli-go
 brew install jq
 brew install jsonlint
+brew install kubebuilder
 #brew install kubectl
 brew install kubernetes-helm
 brew install libpq
