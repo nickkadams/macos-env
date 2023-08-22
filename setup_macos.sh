@@ -153,6 +153,7 @@ brew install chamber
 brew install cli53
 #brew install consul
 brew install coreutils
+brew install cosign
 brew install curl
 #brew install dep
 brew install direnv
