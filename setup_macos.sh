@@ -187,7 +187,7 @@ brew install ipcalc
 #brew install jfrog-cli-go
 brew install jq
 brew install jsonlint
-brew install kubebuilder
+#brew install kubebuilder
 #brew install kubectl
 brew install kubernetes-helm
 brew install libpq
@@ -197,6 +197,7 @@ brew link --force libpq
 #brew install neovim
 brew install ngrep
 #brew install openshift-cli
+brew install operator-sdk
 brew install packer
 brew install pipenv
 brew install pre-commit
