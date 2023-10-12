@@ -310,6 +310,9 @@ pip3 install -U testinfra
 # logitech-options
 brew install homebrew/cask-drivers/logitech-options
 
+# Spotlight
+/usr/libexec/PlistBuddy ~/Library/Preferences/com.apple.symbolichotkeys.plist -c "Set AppleSymbolicHotKeys:64:enabled false"
+
 # Dock
 # delete
 defaults delete com.apple.dock persistent-apps
