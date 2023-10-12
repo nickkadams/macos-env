@@ -1,7 +1,7 @@
 #!/bin/bash
-# Updated 2023.08.22
+# Updated 2023.10.12
 
-tf_ver="1.5.5"
+tf_ver="1.5.7"
 #rb_ver="3.2.2"
 
 # passwordless sudo
@@ -163,8 +163,8 @@ brew install direnv
 brew tap weaveworks/tap
 brew install weaveworks/tap/eksctl
 
-brew install elinks
 brew install exa
+brew install felinks
 brew install findutils
 brew install frum
 brew install fzf
@@ -205,7 +205,7 @@ brew install pre-commit
 brew install python-tk
 
 # s5cmd
-brew tap peakgames/s5cmd https://github.com/peakgames/s5cmd
+brew install peak/tap/s5cmd
 brew install s5cmd
 
 brew install semgrep
@@ -269,6 +269,7 @@ brew install --cask iterm2
 #brew install --cask karabiner-elements
 #brew install --cask kindle
 #brew install --cask microsoft-office
+#brew install --cask microsoft-remote-desktop
 #brew install --cask microsoft-teams
 #brew install --cask moom
 brew install --cask pgadmin4
@@ -321,6 +322,9 @@ defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</
 #defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Atom.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
 defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Slack.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
 defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/zoom.us.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+
+# static-only
+defaults write com.apple.dock static-only -bool true
 
 # restart
 killall Dock
