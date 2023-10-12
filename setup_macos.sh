@@ -181,6 +181,7 @@ brew tap anchore/grype
 brew install grype
 
 brew install hadolint
+brew install helm
 brew install htop
 brew install httpie
 brew install hurl
@@ -190,7 +191,7 @@ brew install jq
 brew install jsonlint
 #brew install kubebuilder
 #brew install kubectl
-brew install kubernetes-helm
+#brew install kubernetes-helm
 brew install libpq
 brew link --force libpq
 
