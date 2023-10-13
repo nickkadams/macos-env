@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2023.10.12
+# Updated 2023.10.13
 
 tf_ver="1.5.7"
 #rb_ver="3.2.2"
@@ -346,3 +346,6 @@ brew cleanup
 
 # oh my zsh
 #sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+# brew and steampipe maintenance
+#brew update && brew upgrade && brew cleanup && steampipe plugin update --all
