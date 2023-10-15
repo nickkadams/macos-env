@@ -328,8 +328,8 @@ defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</
 defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/zoom.us.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
 
 # remove recent apps
-/usr/bin/defaults write "/Users/$me/Library/Preferences/com.apple.dock.plist" show-recents -bool false
-chown $me "/Users/$me/Library/Preferences/com.apple.dock.plist"
+defaults write ~/Library/Preferences/com.apple.dock.plist show-recents -bool false
+chown $me ~/Library/Preferences/com.apple.dock.plist
 
 # restart
 killall Dock
