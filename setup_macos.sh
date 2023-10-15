@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2023.10.13
+# Updated 2023.10.15
 
 tf_ver="1.5.7"
 #rb_ver="3.2.2"
@@ -327,8 +327,9 @@ defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</
 defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Slack.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
 defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/zoom.us.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
 
-# static-only
-defaults write com.apple.dock static-only -bool true
+# remove recent apps
+/usr/bin/defaults write "/Users/$me/Library/Preferences/com.apple.dock.plist" show-recents -bool false
+chown $me "/Users/$me/Library/Preferences/com.apple.dock.plist"
 
 # restart
 killall Dock
