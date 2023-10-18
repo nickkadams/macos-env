@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2023.10.15
+# Updated 2023.10.18
 
 tf_ver="1.5.7"
 #rb_ver="3.2.2"
@@ -195,6 +195,7 @@ brew install jsonlint
 brew install libpq
 brew link --force libpq
 
+brew install mas
 #brew install minikube
 #brew install neovim
 brew install ngrep
