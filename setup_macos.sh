@@ -68,6 +68,7 @@ brew upgrade
 
 # cask for GUI apps
 brew install cask
+brew tap buo/cask-upgrade
 
 # git
 brew install git
