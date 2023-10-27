@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2023.10.18
+# Updated 2023.10.27
 
 tf_ver="1.5.7"
 #rb_ver="3.2.2"
@@ -91,6 +91,7 @@ git config --global credential.helper cache
 git config --global init.defaultBranch main
 git config --global url."https://github.com/".insteadOf ssh://git@github.com/
 #git config --list
+#brew install gitsign
 
 # tfenv
 brew install keybase
