@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2023.10.27
+# Updated 2023.10.30
 
 tf_ver="1.5.7"
 #rb_ver="3.2.2"
@@ -272,6 +272,7 @@ brew install --cask google-chrome
 brew install --cask iterm2
 #brew install --cask karabiner-elements
 #brew install --cask kindle
+#brew install --cask mattermost
 #brew install --cask microsoft-office
 #brew install --cask microsoft-remote-desktop
 #brew install --cask microsoft-teams
