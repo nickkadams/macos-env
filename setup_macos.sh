@@ -274,6 +274,7 @@ brew install --cask drawio
 brew install --cask firefox
 #brew install --cask flycut
 #brew install --cask google-backup-and-sync
+#brew install --cask google-chat
 brew install --cask google-chrome
 #brew install --cask insomnia
 brew install --cask iterm2
