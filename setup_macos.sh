@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2023.10.30
+# Updated 2023.10.31
 
 tf_ver="1.5.7"
 #rb_ver="3.2.2"
@@ -24,10 +24,10 @@ dscacheutil -flushcache
 # disable IPv6
 #sudo networksetup -listallhardwareports
 sudo networksetup -setv6off Wi-Fi
-sudo networksetup -setv6off Ethernet
-sudo networksetup -setv6off "Bluetooth PAN"
+#sudo networksetup -setv6off Ethernet
+#sudo networksetup -setv6off "Bluetooth PAN"
 sudo networksetup -setv6off "Thunderbolt Bridge"
-#sudo networksetup -setv6off "USB 10/100/1000 LAN"
+sudo networksetup -setv6off "USB 10/100/1000 LAN"
 
 # SMB performance tuning
 sudo defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
