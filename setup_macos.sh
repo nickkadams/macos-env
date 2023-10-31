@@ -50,14 +50,20 @@ done
 # unhide ~/Library
 sudo chflags nohidden ~/Library/
 
+# setup ~/.zshrc for Apple Silicon
+cat << EOF >> ~/.zshrc
+export PATH=/opt/homebrew/bin:$PATH
+EOF
+
+source ~/.zshrc
+
 # homebrew check
-check=$((which brew) 2>&1)
-echo $check
-str="brew not found"
-while [[ "$check" == "$str" ]]; do
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-  exit 1
-done
+ls /opt/homebrew/bin/brew
+if [[ $? != 0 ]] ; then
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+else
+    echo "brew found!"
+fi
 
 # create repo dir
 mkdir -p ~/code
