@@ -281,7 +281,7 @@ brew install --cask iterm2
 #brew install --cask kindle
 brew install --cask mattermost
 #brew install --cask microsoft-office
-#brew install --cask microsoft-remote-desktop
+brew install --cask microsoft-remote-desktop
 #brew install --cask microsoft-teams
 #brew install --cask moom
 brew install --cask pgadmin4
