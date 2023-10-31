@@ -261,6 +261,7 @@ brew install --cask adobe-acrobat-reader
 #brew install --cask adium
 brew install --cask alfred
 #brew install --cask appcleaner
+brew install --cask appgate-sdp-client
 #brew install --cask bluejeans
 brew install --cask cacher
 #brew install --cask calibre
@@ -333,6 +334,7 @@ defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</
 defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Mattermost.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
 #defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Slack.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
 defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/zoom.us.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Appgate SDP.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
 
 # remove recent apps
 defaults write ~/Library/Preferences/com.apple.dock.plist show-recents -bool false
