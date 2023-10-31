@@ -47,6 +47,9 @@ while [[ "$check" == "$str" ]]; do
   exit;
 done
 
+# Rosetta 2
+# softwareupdate --install-rosetta --agree-to-license
+
 # unhide ~/Library
 sudo chflags nohidden ~/Library/
 
