@@ -278,7 +278,7 @@ brew install --cask google-chrome
 brew install --cask iterm2
 #brew install --cask karabiner-elements
 #brew install --cask kindle
-#brew install --cask mattermost
+brew install --cask mattermost
 #brew install --cask microsoft-office
 #brew install --cask microsoft-remote-desktop
 #brew install --cask microsoft-teams
@@ -288,7 +288,7 @@ brew install --cask pixel-check
 brew install --cask postman
 brew install --cask powershell
 #brew install --cask scap-workbench
-brew install --cask slack
+#brew install --cask slack
 #brew install --cask sourcetree
 #brew install --cask vagrant
 #brew install --cask virtualbox
@@ -323,15 +323,14 @@ pip3 install -U testinfra
 
 # Dock
 # delete
-#defaults delete com.apple.dock persistent-apps
-#defaults delete com.apple.dock persistent-others
+defaults write com.apple.dock persistent-apps -array
 
 # add
 defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Google Chrome.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
 defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Firefox.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
 defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/iTerm.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
 defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Visual Studio Code.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
-#defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Atom.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Mattermost.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
 #defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Slack.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
 defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/zoom.us.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
 
