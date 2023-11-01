@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2023.10.31
+# Updated 2023.11.01
 
 tf_ver="1.5.7"
 #rb_ver="3.2.2"
@@ -325,6 +325,9 @@ pip3 install -U testinfra
 
 # Spotlight
 #/usr/libexec/PlistBuddy ~/Library/Preferences/com.apple.symbolichotkeys.plist -c "Set AppleSymbolicHotKeys:64:enabled false"
+
+# disable reveal desktop
+defaults write com.apple.WindowManager EnableStandardClickToShowDesktop -bool false
 
 # Dock
 # delete
