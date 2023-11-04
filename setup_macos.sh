@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2023.11.02
+# Updated 2023.11.04
 
 tf_ver="1.5.7"
 #rb_ver="3.2.2"
@@ -296,6 +296,7 @@ brew install --cask powershell
 #brew install --cask scap-workbench
 #brew install --cask slack
 #brew install --cask sourcetree
+brew install --cask tg-pro
 #brew install --cask vagrant
 #brew install --cask virtualbox
 #brew install --cask virtualbox-extension-pack
