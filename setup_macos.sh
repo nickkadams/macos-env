@@ -204,6 +204,7 @@ brew install jsonlint
 #brew install kubebuilder
 #brew install kubectl
 #brew install kubernetes-helm
+brew install kustomize
 brew install libpq
 brew link --force libpq
 
