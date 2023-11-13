@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2023.11.09
+# Updated 2023.11.13
 
 tf_ver="1.5.7"
 #rb_ver="3.2.2"
@@ -281,6 +281,7 @@ brew install --cask firefox
 #brew install --cask google-chat
 brew install --cask google-chrome
 #brew install --cask insomnia
+brew install --cask istat-menus
 brew install --cask iterm2
 #brew install --cask karabiner-elements
 #brew install --cask kindle
