@@ -205,6 +205,7 @@ brew install jsonlint
 # k8s
 brew install derailed/k9s/k9s
 #brew install kubebuilder
+brew install kubecm
 #brew install kubectl
 #brew install kubernetes-helm
 brew install kustomize
