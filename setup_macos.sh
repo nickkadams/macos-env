@@ -203,6 +203,7 @@ brew install jq
 brew install jsonlint
 
 # k8s
+brew install fluxcd/tap/flux
 brew install derailed/k9s/k9s
 #brew install kubebuilder
 brew install kubecm
