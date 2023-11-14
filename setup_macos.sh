@@ -387,5 +387,5 @@ zinit self-update
 zinit ice depth"1"
 zinit light romkatv/powerlevel10k
 
-# brew and steampipe maintenance
-#brew update && brew upgrade && brew cleanup && steampipe plugin update --all
+# brew, zinit plugin, and steampipe maintenance
+#brew update && brew upgrade && brew cleanup && zinit update && steampipe plugin update --all
