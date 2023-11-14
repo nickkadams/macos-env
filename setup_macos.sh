@@ -210,7 +210,7 @@ brew install kubecm
 #brew install kubectl
 #brew install kubernetes-helm
 brew install kustomize
-brew install --cask lens
+#brew install --cask lens
 brew install stern
 
 brew install libpq
