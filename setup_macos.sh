@@ -383,5 +383,9 @@ brew cleanup
 bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
 zinit self-update
 
+# powerlevel10k theme
+zinit ice depth"1"
+zinit light romkatv/powerlevel10k
+
 # brew and steampipe maintenance
 #brew update && brew upgrade && brew cleanup && steampipe plugin update --all
