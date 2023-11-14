@@ -164,6 +164,7 @@ brew install cfn-lint
 brew install chamber
 brew install cli53
 #brew install consul
+brew install convco
 brew install coreutils
 brew install cosign
 brew install curl
