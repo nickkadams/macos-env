@@ -201,14 +201,17 @@ brew install ipcalc
 #brew install jfrog-cli-go
 brew install jq
 brew install jsonlint
+
+# k8s
 brew install derailed/k9s/k9s
 #brew install kubebuilder
 #brew install kubectl
 #brew install kubernetes-helm
 brew install kustomize
+brew install stern
+
 brew install libpq
 brew link --force libpq
-
 brew install mas
 #brew install minikube
 #brew install neovim
