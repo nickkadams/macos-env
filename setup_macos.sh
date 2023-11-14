@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2023.11.13
+# Updated 2023.11.14
 
 tf_ver="1.5.7"
 #rb_ver="3.2.2"
@@ -201,6 +201,7 @@ brew install ipcalc
 #brew install jfrog-cli-go
 brew install jq
 brew install jsonlint
+brew install derailed/k9s/k9s
 #brew install kubebuilder
 #brew install kubectl
 #brew install kubernetes-helm
