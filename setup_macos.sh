@@ -376,8 +376,12 @@ sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.screensharing.pli
 # cleanup
 brew cleanup
 
-# oh my zsh
+# oh-my-zsh
 #sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+# zinit
+bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
+zinit self-update
 
 # brew and steampipe maintenance
 #brew update && brew upgrade && brew cleanup && steampipe plugin update --all
