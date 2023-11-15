@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2023.11.14
+# Updated 2023.11.15
 
 tf_ver="1.5.7"
 #rb_ver="3.2.2"
@@ -388,4 +388,4 @@ zinit ice depth"1"
 zinit light romkatv/powerlevel10k
 
 # brew, zinit plugin, and steampipe maintenance
-#brew update && brew upgrade && brew cleanup && zinit update && steampipe plugin update --all
+#brew update && brew upgrade && brew cleanup && zinit update --all && steampipe plugin update --all
