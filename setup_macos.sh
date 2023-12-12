@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2023.11.15
+# Updated 2023.12.12
 
 tf_ver="1.5.7"
 #rb_ver="3.2.2"
@@ -218,7 +218,14 @@ brew install stern
 brew install libpq
 brew link --force libpq
 brew install mas
+
+# minikube
 #brew install minikube
+#minikube config set cpus 4
+#minikube config set memory 12288
+#minikube start --kubernetes-version=1.28.4
+#minikube addons enable metrics-server
+
 #brew install neovim
 brew install ngrep
 #brew install openshift-cli
