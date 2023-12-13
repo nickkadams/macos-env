@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2023.12.12
+# Updated 2023.12.13
 
 tf_ver="1.5.7"
 #rb_ver="3.2.2"
@@ -107,6 +107,8 @@ git config --global url."https://github.com/".insteadOf ssh://git@github.com/
 brew install keybase
 brew install tfenv
 tfenv install $tf_ver
+
+#brew install tgenv
 
 # setup environment
 mkdir -p ~/.env.d
