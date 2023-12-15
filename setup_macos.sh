@@ -138,8 +138,11 @@ brew install tflint
 #rbenv rehash
 #rbenv which ruby
 
-# gems 
+# gem
+echo "gem: --no-document" > ~/.gemrc
+
 # gem install brakeman
+# gem install bundler
 
 # chef
 #brew install --cask chef-workstation
