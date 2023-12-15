@@ -271,6 +271,7 @@ brew install terraform-docs
 
 # terraspace via ruby
 #rbenv local $rb_ver
+#export GEM_HOME="$HOME/.gem"
 #gem install terraspace -V
 # or macos standalone
 #brew tap boltops-tools/software
