@@ -270,6 +270,7 @@ brew install syft
 brew install terraform-docs
 
 # terraspace via ruby
+#rbenv local $rb_ver
 #gem install terraspace -V
 # or macos standalone
 #brew tap boltops-tools/software
