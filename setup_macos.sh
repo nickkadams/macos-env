@@ -133,6 +133,7 @@ brew install tflint
 
 # rbenv
 #brew install rbenv
+#rbenv init
 #rbenv install $rb_ver
 #rbenv global $rb_ver
 #rbenv rehash
