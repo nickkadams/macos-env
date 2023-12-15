@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2023.12.13
+# Updated 2023.12.15
 
 tf_ver="1.5.7"
 #rb_ver="3.2.2"
@@ -134,6 +134,7 @@ brew install tflint
 # rbenv
 #brew install rbenv
 #rbenv install $rb_ver
+#rbenv global $rb_ver
 #rbenv rehash
 #rbenv which ruby
 
