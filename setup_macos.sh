@@ -266,7 +266,9 @@ brew install syft
 
 brew install terraform-docs
 
-# terraspace
+# terraspace via ruby
+#gem install terraspace
+# or macos standalone
 #brew tap boltops-tools/software
 #brew install terraspace
 
