@@ -265,6 +265,11 @@ brew tap anchore/syft
 brew install syft
 
 brew install terraform-docs
+
+# terraspace
+#brew tap boltops-tools/software
+#brew install terraspace
+
 brew install tflint
 brew install tfsec
 brew install the_silver_searcher
