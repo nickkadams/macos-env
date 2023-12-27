@@ -1,7 +1,7 @@
 #!/bin/bash
-# Updated 2023.12.15
+# Updated 2023.12.27
 
-tf_ver="1.5.7"
+tf_ver="1.5.5"
 #rb_ver="3.2.2"
 
 # passwordless sudo
