@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2023.12.27
+# Updated 2023.12.28
 
 tf_ver="1.5.5"
 #rb_ver="3.2.2"
@@ -366,7 +366,7 @@ pip3 install -U testinfra
 defaults write com.apple.WindowManager EnableStandardClickToShowDesktop -bool false
 
 # disable SmartCard pairing
-defaults write com.apple.security.smartcard UserPairing -bool false
+sudo defaults write com.apple.security.smartcard UserPairing -bool false
 
 # Dock
 # delete
