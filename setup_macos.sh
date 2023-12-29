@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2023.12.28
+# Updated 2023.12.29
 
 tf_ver="1.5.5"
 #rb_ver="3.2.2"
@@ -336,6 +336,7 @@ brew install --cask tg-pro
 #brew install --cask virtualbox
 #brew install --cask virtualbox-extension-pack
 #brew install --cask vlc
+#brew install --cask vmware-fusion
 #brew install --cask webex-meetings
 #brew install --cask wireshark
 brew install --cask zoom
