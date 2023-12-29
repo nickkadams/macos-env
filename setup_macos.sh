@@ -337,6 +337,7 @@ brew install --cask tg-pro
 #brew install --cask virtualbox-extension-pack
 #brew install --cask vlc
 #brew install --cask vmware-fusion
+#brew install docker-machine-driver-vmware
 #brew install --cask webex-meetings
 #brew install --cask wireshark
 brew install --cask zoom
