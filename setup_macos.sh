@@ -104,7 +104,8 @@ git config --global url."https://github.com/".insteadOf ssh://git@github.com/
 #brew install gitsign
 
 brew install gpg
-# git config --global user.signingkey <KEY ID>
+#git config --global user.signingkey <KEY ID>
+#git config --global commit.gpgsign true
 
 # tfenv
 brew install keybase
