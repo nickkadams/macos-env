@@ -102,7 +102,9 @@ git config --global init.defaultBranch main
 git config --global url."https://github.com/".insteadOf ssh://git@github.com/
 #git config --list
 #brew install gitsign
+
 brew install gpg
+# git config --global user.signingkey <KEY ID>
 
 # tfenv
 brew install keybase
