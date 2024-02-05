@@ -1,8 +1,8 @@
 #!/bin/bash
-# Updated 2024.01.11
+# Updated 2024.02.05
 
 tf_ver="1.5.5"
-#rb_ver="3.2.2"
+#rb_ver="3.3.0"
 
 # passwordless sudo
 me=`id -nu`
