@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2024.02.05
+# Updated 2024.02.09
 
 tf_ver="1.5.5"
 #rb_ver="3.3.0"
@@ -260,8 +260,9 @@ brew install hudochenkov/sshpass/sshpass
 brew install sshuttle
 brew install sslyze
 
-# steampipe
+# turbot
 brew tap turbot/tap
+brew install flowpipe
 brew install steampipe
 steampipe plugin install aws
 steampipe plugin install github
