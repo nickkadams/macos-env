@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2024.02.09
+# Updated 2024.02.20
 
 tf_ver="1.5.5"
 #rb_ver="3.3.0"
@@ -127,6 +127,7 @@ export TF_VAR_shared_key_path=/Users/$me/.ssh/sample.pem
 #export TF_VAR_bastion_host=1.2.3.4
 #export TF_VAR_chef_validator_key_path=/Users/$me/.chef/sample.pem
 #export TF_VAR_chef_secret_key_path=/Users/$me/.chef/encrypted_data_bag_secret
+export KUBE_CONFIG_PATH=/Users/$me/.kube/config
 EOF
 chmod 600 ~/.env.d/sample
 
