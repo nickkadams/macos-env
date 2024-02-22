@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2024.02.20
+# Updated 2024.02.22
 
 tf_ver="1.5.5"
 #rb_ver="3.3.0"
@@ -185,8 +185,8 @@ brew install direnv
 #brew install doctl
 
 # EKS
-brew tap weaveworks/tap
-brew install weaveworks/tap/eksctl
+#brew tap weaveworks/tap
+#brew install weaveworks/tap/eksctl
 
 brew install exa
 brew install felinks
