@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2024.02.22
+# Updated 2024.03.17
 
 tf_ver="1.5.5"
 #rb_ver="3.3.0"
@@ -320,6 +320,7 @@ brew install --cask firefox
 #brew install --cask google-backup-and-sync
 #brew install --cask google-chat
 brew install --cask google-chrome
+brew install --cask gpg-suite-no-mail
 #brew install --cask insomnia
 #brew install --cask istat-menus
 brew install --cask iterm2
