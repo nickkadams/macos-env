@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2024.03.17
+# Updated 2024.03.27
 
 tf_ver="1.5.5"
 #rb_ver="3.3.0"
@@ -296,6 +296,7 @@ brew install aquasecurity/trivy/trivy
 brew install vim
 brew install wget
 brew install yamllint
+brew install yq
 brew install zsh
 
 # GUI
