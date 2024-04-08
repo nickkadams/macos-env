@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2024.03.27
+# Updated 2024.04.08
 
 tf_ver="1.5.5"
 #rb_ver="3.3.0"
@@ -223,6 +223,7 @@ brew install derailed/k9s/k9s
 brew install kubecm
 #brew install kubectl
 #brew install kubernetes-helm
+brew install kube-score
 brew install kustomize
 #brew install --cask lens
 brew install sops
