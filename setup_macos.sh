@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2024.04.08
+# Updated 2024.04.18
 
 tf_ver="1.5.5"
 #rb_ver="3.3.0"
@@ -294,6 +294,7 @@ brew install tmux
 brew install tree
 brew install aquasecurity/trivy/trivy
 #brew install vault
+brew install velero
 brew install vim
 brew install wget
 brew install yamllint
