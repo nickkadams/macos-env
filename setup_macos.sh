@@ -243,7 +243,7 @@ brew install mas
 #brew install neovim
 brew install ngrep
 #brew install openshift-cli
-brew install opentofu
+#brew install opentofu
 brew install operator-sdk
 brew install packer
 brew install pipenv
