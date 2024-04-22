@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2024.04.18
+# Updated 2024.04.22
 
 tf_ver="1.5.5"
 #rb_ver="3.3.0"
@@ -243,6 +243,7 @@ brew install mas
 #brew install neovim
 brew install ngrep
 #brew install openshift-cli
+brew install opentofu
 brew install operator-sdk
 brew install packer
 brew install pipenv
