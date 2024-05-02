@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2024.04.24
+# Updated 2024.05.02
 
 tf_ver="1.5.5"
 #rb_ver="3.3.1"
@@ -309,7 +309,8 @@ brew install --cask adobe-acrobat-reader
 #brew install --cask adium
 brew install --cask alfred
 #brew install --cask appcleaner
-brew install --cask appgate-sdp-client
+#brew install --cask appgate-sdp-client
+brew install --cask aws-vpn-client
 #brew install --cask bluejeans
 brew install --cask cacher
 #brew install --cask calibre
