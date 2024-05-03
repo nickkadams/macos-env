@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2024.05.02
+# Updated 2024.05.03
 
 tf_ver="1.5.5"
 #rb_ver="3.3.1"
@@ -183,6 +183,8 @@ brew install curl
 #brew install dep
 brew install direnv
 #brew install doctl
+
+#brew install easy-rsa
 
 # EKS
 #brew tap weaveworks/tap
