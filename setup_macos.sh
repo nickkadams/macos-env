@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2024.05.03
+# Updated 2024.05.06
 
 tf_ver="1.5.5"
 #rb_ver="3.3.1"
@@ -169,6 +169,7 @@ pip3 install --user --upgrade pip
 pip3 install pywinrm
 
 #brew install asdf
+#brew install awsume
 #brew install azure-cli
 brew install bat
 brew install cfn-flip
@@ -183,8 +184,6 @@ brew install curl
 #brew install dep
 brew install direnv
 #brew install doctl
-
-#brew install easy-rsa
 
 # EKS
 #brew tap weaveworks/tap
