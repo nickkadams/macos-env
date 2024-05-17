@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2024.05.06
+# Updated 2024.05.17
 
 tf_ver="1.5.5"
 #rb_ver="3.3.1"
@@ -270,6 +270,7 @@ brew install flowpipe
 brew install steampipe
 steampipe plugin install aws
 steampipe plugin install github
+steampipe plugin install  theapsgroup/gitlab
 steampipe plugin install kubernetes
 steampipe plugin install net
 steampipe plugin install whois
