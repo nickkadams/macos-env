@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2024.05.17
+# Updated 2024.05.20
 
 tf_ver="1.5.5"
 #rb_ver="3.3.1"
@@ -133,8 +133,6 @@ chmod 600 ~/.env.d/sample
 
 # tflint
 brew install tflint
-#curl -L -o /tmp/tflint.zip https://github.com/wata727/tflint/releases/download/v0.7.2/tflint_darwin_amd64.zip
-#unzip /tmp/tflint.zip -d /usr/local/bin
 
 # rbenv
 #brew install rbenv
@@ -264,22 +262,12 @@ brew install hudochenkov/sshpass/sshpass
 brew install sshuttle
 brew install sslyze
 
-# turbot
-brew tap turbot/tap
-brew install flowpipe
-brew install steampipe
-steampipe plugin install aws
-steampipe plugin install github
-steampipe plugin install  theapsgroup/gitlab
-steampipe plugin install kubernetes
-steampipe plugin install net
-steampipe plugin install whois
-
 # syft
 brew tap anchore/syft
 brew install syft
 
 brew install terraform-docs
+brew install terramate
 
 # terraspace via ruby
 #rbenv local $rb_ver
@@ -296,6 +284,18 @@ brew install tmate
 brew install tmux
 brew install tree
 brew install aquasecurity/trivy/trivy
+
+# turbot
+brew tap turbot/tap
+brew install flowpipe
+brew install steampipe
+steampipe plugin install aws
+steampipe plugin install github
+steampipe plugin install  theapsgroup/gitlab
+steampipe plugin install kubernetes
+steampipe plugin install net
+steampipe plugin install whois
+
 #brew install vault
 brew install velero
 brew install vim
