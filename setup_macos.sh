@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2024.05.20
+# Updated 2024.07.09
 
 tf_ver="1.5.5"
 #rb_ver="3.3.1"
@@ -218,6 +218,7 @@ brew install jsonlint
 brew install fluxcd/tap/flux
 #brew install istioctl
 brew install derailed/k9s/k9s
+brew install kompose
 #brew install kubebuilder
 brew install kubecm
 #brew install kubectl
