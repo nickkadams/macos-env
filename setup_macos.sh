@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2024.07.09
+# Updated 2024.07.22
 
 tf_ver="1.5.5"
 #rb_ver="3.3.1"
@@ -181,6 +181,7 @@ brew install cosign
 brew install curl
 #brew install dep
 brew install direnv
+brew install docker-compose
 #brew install doctl
 
 # EKS
