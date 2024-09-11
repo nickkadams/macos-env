@@ -107,10 +107,14 @@ brew install gpg
 #git config --global user.signingkey <KEY ID>
 #git config --global commit.gpgsign true
 
+# tenv
+brew install tenv
+tenv tf install tf_ver
+
 # tfenv
 brew install keybase
-brew install tfenv
-tfenv install $tf_ver
+# brew install tfenv
+# tfenv install $tf_ver
 
 #brew install tgenv
 
