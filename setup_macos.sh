@@ -109,7 +109,9 @@ brew install gpg
 
 # tenv
 brew install tenv
-tenv tf install tf_ver
+tenv tf install $tf_ver
+tenv tofu install latest
+tenv tg install latest
 
 # tfenv
 brew install keybase
