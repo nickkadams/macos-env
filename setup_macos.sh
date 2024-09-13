@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2024.09.11
+# Updated 2024.09.13
 
 tf_ver="1.5.5"
 #rb_ver="3.3.1"
@@ -249,6 +249,10 @@ brew install mas
 
 #brew install neovim
 brew install ngrep
+
+# h2load
+brew install nghttp2
+
 #brew install openshift-cli
 #brew install opentofu
 brew install operator-sdk
@@ -275,7 +279,7 @@ brew tap anchore/syft
 brew install syft
 
 brew install terraform-docs
-brew install terramate
+#brew install terramate
 
 # terraspace via ruby
 #rbenv local $rb_ver
