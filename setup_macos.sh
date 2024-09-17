@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2024.09.13
+# Updated 2024.09.17
 
 tf_ver="1.5.5"
 #rb_ver="3.3.1"
@@ -220,6 +220,8 @@ brew install ipcalc
 #brew install jfrog-cli-go
 brew install jq
 brew install jsonlint
+
+brew install kics
 
 # k8s
 brew install fluxcd/tap/flux
