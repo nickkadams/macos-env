@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2024.09.17
+# Updated 2024.09.23
 
 tf_ver="1.5.5"
 #rb_ver="3.3.1"
@@ -165,6 +165,8 @@ echo "gem: --no-document" > ~/.gemrc
 brew install awscli
 brew tap versent/homebrew-taps
 brew install saml2aws
+
+brew install aws-cdk
 
 # Ansible
 brew install ansible
