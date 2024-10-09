@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2024.09.23
+# Updated 2024.10.09
 
 tf_ver="1.5.5"
 #rb_ver="3.3.1"
@@ -178,6 +178,7 @@ pip3 install pywinrm
 #brew install awsume
 #brew install azure-cli
 brew install bat
+brew install cf2tf
 brew install cfn-flip
 brew install cfn-lint
 brew install chamber
