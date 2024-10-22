@@ -326,7 +326,7 @@ brew install --cask 1password
 brew install --cask 1password-cli
 brew install --cask adobe-acrobat-reader
 #brew install --cask adium
-brew install --cask alfred
+#brew install --cask alfred
 #brew install --cask appcleaner
 #brew install --cask appgate-sdp-client
 #brew install --cask aws-vpn-client
