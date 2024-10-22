@@ -308,7 +308,7 @@ brew install flowpipe
 brew install steampipe
 steampipe plugin install aws
 steampipe plugin install github
-steampipe plugin install  theapsgroup/gitlab
+steampipe plugin install theapsgroup/gitlab
 steampipe plugin install kubernetes
 steampipe plugin install net
 steampipe plugin install whois
