@@ -329,7 +329,7 @@ brew install --cask adobe-acrobat-reader
 brew install --cask alfred
 #brew install --cask appcleaner
 #brew install --cask appgate-sdp-client
-brew install --cask aws-vpn-client
+#brew install --cask aws-vpn-client
 #brew install --cask bluejeans
 brew install --cask cacher
 #brew install --cask calibre
