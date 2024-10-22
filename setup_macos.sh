@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2024.10.09
+# Updated 2024.10.22
 
 tf_ver="1.5.5"
 #rb_ver="3.3.1"
@@ -350,7 +350,7 @@ brew install --cask gpg-suite-no-mail
 brew install --cask iterm2
 #brew install --cask karabiner-elements
 #brew install --cask kindle
-brew install --cask mattermost
+#brew install --cask mattermost
 #brew install --cask microsoft-office
 brew install --cask microsoft-remote-desktop
 #brew install --cask microsoft-teams
