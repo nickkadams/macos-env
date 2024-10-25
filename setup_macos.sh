@@ -263,7 +263,7 @@ brew install nghttp2
 #brew install openshift-cli
 #brew install opentofu
 brew install operator-sdk
-brew install packer
+#brew install packer
 brew install pipenv
 brew install pre-commit
 brew install python-tk
