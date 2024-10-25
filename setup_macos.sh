@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2024.10.22
+# Updated 2024.10.25
 
 tf_ver="1.5.5"
 #rb_ver="3.3.1"
@@ -47,6 +47,9 @@ while [[ "$check" == "$str" ]]; do
   osascript -e 'tell app "System Events" to display dialog "xcode command-line tools missing." buttons "OK" default button 1 with title "xcode command-line tools"'
   exit;
 done
+
+# Xcode license
+sudo xcodebuild -license
 
 # Rosetta 2
 # softwareupdate --install-rosetta --agree-to-license
