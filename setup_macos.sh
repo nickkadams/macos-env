@@ -378,6 +378,7 @@ brew install --cask zoom
 # code/plugins
 brew install --cask visual-studio-code
 code --install-extension 4ops.terraform
+code --install-extension exiasr.hadolint
 
 # Go debugger
 go get -u github.com/derekparker/delve/cmd/dlv
