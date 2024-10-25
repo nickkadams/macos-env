@@ -306,6 +306,7 @@ brew install aquasecurity/trivy/trivy
 
 # turbot
 brew tap turbot/tap
+brew install powerpipe
 brew install flowpipe
 brew install steampipe
 steampipe plugin install aws
