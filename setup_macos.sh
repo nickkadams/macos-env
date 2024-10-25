@@ -142,9 +142,6 @@ export KUBE_CONFIG_PATH=/Users/$me/.kube/config
 EOF
 chmod 600 ~/.env.d/sample
 
-# tflint
-brew install tflint
-
 # rbenv
 #brew install rbenv
 #rbenv init
