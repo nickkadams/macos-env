@@ -1,6 +1,7 @@
 #!/bin/bash
 # Updated 2024.10.25
 
+xcode_ver="16.0"
 tf_ver="1.5.5"
 #rb_ver="3.3.1"
 
@@ -44,7 +45,8 @@ check=$((xcode-\select --install) 2>&1)
 #echo $check
 str="xcode-select: note: install requested for command line developer tools"
 while [[ "$check" == "$str" ]]; do
-  osascript -e 'tell app "System Events" to display dialog "xcode command-line tools missing." buttons "OK" default button 1 with title "xcode command-line tools"'
+  #osascript -e 'tell app "System Events" to display dialog "xcode command-line tools missing." buttons "OK" default button 1 with title "xcode command-line tools"'
+  softwareupdate --install "Command Line Tools for Xcode-${xcode_ver}"
   exit;
 done
 
