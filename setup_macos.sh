@@ -396,35 +396,46 @@ pip3 install -U molecule
 pip3 install -U pylint
 pip3 install -U testinfra
 
+### macOS settings
+
 # Spotlight
 #/usr/libexec/PlistBuddy ~/Library/Preferences/com.apple.symbolichotkeys.plist -c "Set AppleSymbolicHotKeys:64:enabled false"
+
+# disable SmartCard pairing
+#defaults write com.apple.security.smartcard UserPairing -bool false
 
 # disable reveal desktop
 defaults write com.apple.WindowManager EnableStandardClickToShowDesktop -bool false
 
-# disable SmartCard pairing
-sudo defaults write com.apple.security.smartcard UserPairing -bool false
-
 # Dock
-# delete
+# remove defaults
 defaults write com.apple.dock persistent-apps -array
 
-# add
-defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Google Chrome.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
-defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Firefox.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
-defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/iTerm.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
-defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Visual Studio Code.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
-#defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Mattermost.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
-#defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Slack.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
-defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/zoom.us.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
-#defaults write com.apple.dock persistent-apps -array-add '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Appgate SDP.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>'
+# tool
+brew install dockutil
 
-# remove recent apps
+# add
+dockutil --add /Applications/Launchpad.app
+dockutil --add '/Applications/Google Chrome.app'
+dockutil --add /Applications/Firefox.app
+dockutil --add /Applications/iTerm.app
+dockutil --add '/Applications/Visual Studio Code.app'
+dockutil --add /Applications/Slack.app
+dockutil --add /Applications/zoom.us.app
+
+# remove
+dockutil --remove Downloads
+
+# recent
 defaults write ~/Library/Preferences/com.apple.dock.plist show-recents -bool false
-chown $me ~/Library/Preferences/com.apple.dock.plist
+# chown `id -nu` ~/Library/Preferences/com.apple.dock.plist
 
 # restart
 killall Dock
+
+# reset Dock to default
+#defaults delete com.apple.dock; killall Dock
+#brew uninstall dockutil
 
 # disable sleep
 sudo systemsetup -setcomputersleep Never
