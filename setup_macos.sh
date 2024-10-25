@@ -336,7 +336,7 @@ brew install --cask adobe-acrobat-reader
 brew install --cask cacher
 #brew install --cask calibre
 #brew install --cask dash
-#brew install --cask dbeaver-community
+brew install --cask dbeaver-community
 brew install --cask docker
 brew install --cask drawio
 #brew install --cask figma
@@ -357,7 +357,7 @@ brew install --cask iterm2
 brew install --cask microsoft-remote-desktop
 #brew install --cask microsoft-teams
 #brew install --cask moom
-brew install --cask pgadmin4
+#brew install --cask pgadmin4
 brew install --cask pixel-check
 brew install --cask postman
 brew install --cask powershell
