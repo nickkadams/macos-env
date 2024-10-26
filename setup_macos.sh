@@ -376,6 +376,9 @@ brew install --cask tg-pro
 #brew install --cask wireshark
 brew install --cask zoom
 
+# Dell Display and Peripheral Manager
+#brew install --cask ddpm
+
 # code/plugins
 brew install --cask visual-studio-code
 code --install-extension 4ops.terraform
