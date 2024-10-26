@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2024.10.25
+# Updated 2024.10.26
 
 xcode_ver="16.0"
 tf_ver="1.5.5"
@@ -398,6 +398,9 @@ pip3 install -U pylint
 pip3 install -U testinfra
 
 ### macOS settings
+
+# Natural scrolling
+defaults write -g com.apple.swipescrolldirection -bool false
 
 # Spotlight
 #/usr/libexec/PlistBuddy ~/Library/Preferences/com.apple.symbolichotkeys.plist -c "Set AppleSymbolicHotKeys:64:enabled false"
