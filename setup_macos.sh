@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2024.10.26
+# Updated 2024.10.28
 
 xcode_ver="16.0"
 tf_ver="1.5.5"
@@ -203,7 +203,11 @@ brew install exa
 brew install felinks
 brew install findutils
 brew install frum
+
+# fzf
 brew install fzf
+source <(fzf --zsh)
+
 brew install go
 
 # aws-sdk-go
