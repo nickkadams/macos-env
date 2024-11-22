@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2024.10.28
+# Updated 2024.11.22
 
 xcode_ver="16.0"
 tf_ver="1.5.5"
@@ -124,6 +124,10 @@ brew install keybase
 # tfenv install $tf_ver
 
 #brew install tgenv
+
+# packer
+brew tap hashicorp/tap
+brew install hashicorp/tap/packer
 
 # setup environment
 mkdir -p ~/.env.d
@@ -267,7 +271,6 @@ brew install nghttp2
 #brew install openshift-cli
 #brew install opentofu
 brew install operator-sdk
-#brew install packer
 brew install pipenv
 brew install pre-commit
 brew install python-tk
