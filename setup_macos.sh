@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2024.11.22
+# Updated 2025.01.09
 
 xcode_ver="16.0"
 tf_ver="1.5.5"
@@ -390,6 +390,7 @@ brew install --cask zoom
 brew install --cask visual-studio-code
 code --install-extension 4ops.terraform
 code --install-extension exiasr.hadolint
+code --install-extension github.vscode-github-actions
 
 # Go debugger
 go get -u github.com/derekparker/delve/cmd/dlv
