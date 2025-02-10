@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2025.01.09
+# Updated 2025.02.10
 
 xcode_ver="16.0"
 tf_ver="1.5.5"
@@ -237,6 +237,7 @@ brew install jsonlint
 brew install kics
 
 # k8s
+brew install argocd
 brew install fluxcd/tap/flux
 brew install istioctl
 brew install derailed/k9s/k9s
