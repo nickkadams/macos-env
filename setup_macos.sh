@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2025.02.10
+# Updated 2025.04.25
 
 xcode_ver="16.0"
 tf_ver="1.5.5"
@@ -382,6 +382,7 @@ brew install --cask tg-pro
 #brew install docker-machine-driver-vmware
 #brew install --cask webex-meetings
 #brew install --cask wireshark
+#brew install --cask yubico-authenticator
 brew install --cask zoom
 
 # Dell Display and Peripheral Manager
