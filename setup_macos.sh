@@ -361,6 +361,7 @@ brew install --cask gpg-suite-no-mail
 brew install --cask iterm2
 #brew install --cask karabiner-elements
 #brew install --cask kindle
+brew install --cask logi-options+
 #brew install --cask mattermost
 #brew install --cask microsoft-office
 brew install --cask microsoft-remote-desktop
