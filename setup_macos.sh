@@ -1,7 +1,7 @@
 #!/bin/bash
-# Updated 2025.05.23
+# Updated 2025.09.18
 
-xcode_ver="16.0"
+xcode_ver="16.4"
 tf_ver="1.5.5"
 #rb_ver="3.3.1"
 
