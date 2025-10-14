@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2025.09.18
+# Updated 2025.10.14
 
 xcode_ver="16.4"
 tf_ver="1.5.5"
@@ -251,6 +251,10 @@ brew install kustomize
 #brew install --cask lens
 brew install sops
 brew install stern
+
+# kubectl-image
+brew tap pete911/tap
+brew install kubectl-image
 
 brew install libpq
 brew link --force libpq
