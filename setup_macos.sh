@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2025.10.14
+# Updated 2025.12.10
 
 xcode_ver="16.4"
 tf_ver="1.5.5"
@@ -266,6 +266,8 @@ brew install mas
 #minikube config set memory 12288
 #minikube start --kubernetes-version=1.28.4
 #minikube addons enable metrics-server
+
+brew install miller
 
 #brew install neovim
 brew install ngrep
