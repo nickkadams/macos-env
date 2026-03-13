@@ -350,6 +350,7 @@ brew install --cask adobe-acrobat-reader
 #brew install --cask bluejeans
 brew install --cask cacher
 #brew install --cask calibre
+brew install --cask claude-code
 #brew install --cask dash
 brew install --cask dbeaver-community
 brew install --cask docker
