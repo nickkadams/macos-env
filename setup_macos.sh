@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2025.12.10
+# Updated 2026.03.13
 
 xcode_ver="16.4"
 tf_ver="1.5.5"
@@ -361,6 +361,7 @@ brew install --cask firefox
 #brew install --cask google-backup-and-sync
 #brew install --cask google-chat
 brew install --cask google-chrome
+brew install --cask gcloud-cli
 brew install --cask gpg-suite-no-mail
 #brew install --cask insomnia
 #brew install --cask istat-menus
