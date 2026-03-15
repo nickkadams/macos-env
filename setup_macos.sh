@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2026.03.13
+# Updated 2026.03.15
 
 xcode_ver="16.4"
 tf_ver="1.5.5"
@@ -188,6 +188,7 @@ brew install cf2tf
 brew install cfn-flip
 brew install cfn-lint
 brew install chamber
+brew install checkov
 brew install cli53
 #brew install consul
 brew install convco
