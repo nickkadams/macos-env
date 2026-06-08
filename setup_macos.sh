@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2026.03.15
+# Updated 2026.06.08
 
 xcode_ver="16.4"
 tf_ver="1.5.5"
@@ -442,7 +442,8 @@ defaults write com.apple.dock persistent-apps -array
 brew install dockutil
 
 # add
-dockutil --add /Applications/Launchpad.app
+# dockutil --add /Applications/Launchpad.app # prior to macOS Tahoe
+dockutil --add '/Applications/Apps.app' # macOS Tahoe and later versions
 dockutil --add '/Applications/Google Chrome.app'
 dockutil --add /Applications/Firefox.app
 dockutil --add /Applications/iTerm.app
