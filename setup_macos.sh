@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2026.06.08
+# Updated 2026.06.10
 
 xcode_ver="16.4"
 tf_ver="1.5.5"
@@ -433,6 +433,9 @@ defaults write -g com.apple.swipescrolldirection -bool false
 
 # disable reveal desktop
 defaults write com.apple.WindowManager EnableStandardClickToShowDesktop -bool false
+
+# enable Dark Mode
+osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to not dark mode'
 
 # Dock
 # remove defaults
