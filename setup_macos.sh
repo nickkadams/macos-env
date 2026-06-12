@@ -360,43 +360,44 @@ brew install --cask drawio
 #brew install --cask filezilla
 brew install --cask firefox
 #brew install --cask flycut
-#brew install --cask google-backup-and-sync
-#brew install --cask google-chat
+# brew install --cask google-backup-and-sync
+# brew install --cask google-chat
 brew install --cask google-chrome
 brew install --cask gcloud-cli
 brew install --cask gpg-suite-no-mail
 #brew install --cask insomnia
-#brew install --cask istat-menus
+# brew install --cask istat-menus
 brew install --cask iterm2
-#brew install --cask karabiner-elements
-#brew install --cask kindle
+# brew install --cask karabiner-elements
+# brew install --cask kindle
 brew install --cask logi-options+
-#brew install --cask mattermost
-#brew install --cask microsoft-office
+# brew install --cask mattermost
+# brew install --cask microsoft-office
 brew install --cask microsoft-remote-desktop
-#brew install --cask microsoft-teams
-#brew install --cask moom
-#brew install --cask pgadmin4
+# brew install --cask microsoft-teams
+# brew install --cask moom
+# brew install --cask pgadmin4
 brew install --cask pixel-check
 brew install --cask postman
 brew install --cask powershell
-#brew install --cask scap-workbench
-#brew install --cask slack
-#brew install --cask sourcetree
+# brew install --cask scap-workbench
+# brew install --cask slack
+# brew install --cask sourcetree
+# brew install --cask teleport
 brew install --cask tg-pro
-#brew install --cask vagrant
-#brew install --cask virtualbox
-#brew install --cask virtualbox-extension-pack
-#brew install --cask vlc
-#brew install --cask vmware-fusion
-#brew install docker-machine-driver-vmware
-#brew install --cask webex-meetings
-#brew install --cask wireshark
-#brew install --cask yubico-authenticator
+# brew install --cask vagrant
+# brew install --cask virtualbox
+# brew install --cask virtualbox-extension-pack
+# brew install --cask vlc
+# brew install --cask vmware-fusion
+# brew install docker-machine-driver-vmware
+# brew install --cask webex-meetings
+# brew install --cask wireshark
+# brew install --cask yubico-authenticator
 brew install --cask zoom
 
 # Dell Display and Peripheral Manager
-#brew install --cask ddpm
+# brew install --cask ddpm
 
 # code/plugins
 brew install --cask visual-studio-code
