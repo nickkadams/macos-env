@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2026.06.10
+# Updated 2026.06.12
 
 xcode_ver="16.4"
 tf_ver="1.5.5"
@@ -401,6 +401,7 @@ brew install --cask zoom
 # code/plugins
 brew install --cask visual-studio-code
 code --install-extension 4ops.terraform
+code --install-extension anthropic.claude-code
 code --install-extension exiasr.hadolint
 code --install-extension github.vscode-github-actions
 
