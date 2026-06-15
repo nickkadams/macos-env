@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2026.06.12
+# Updated 2026.06.15
 
 xcode_ver="16.4"
 tf_ver="1.5.5"
@@ -127,6 +127,7 @@ brew install keybase
 
 # packer
 brew tap hashicorp/tap
+brew trust hashicorp/tap
 brew install hashicorp/tap/packer
 
 # setup environment
