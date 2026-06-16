@@ -2,7 +2,7 @@
 # Updated 2026.06.16
 
 xcode_ver="16.4"
-tf_ver="1.5.5"
+tf_ver="1.15.6" # "1.5.5"
 #rb_ver="3.3.1"
 
 # passwordless sudo
@@ -115,8 +115,9 @@ brew install gpg
 # tenv
 brew install tenv
 tenv tf install $tf_ver
-tenv tofu install latest
-tenv tg install latest
+# cp ~/.tenv/Terraform/version .terraform-version
+# tenv tofu install latest
+# tenv tg install latest
 
 # tfenv
 brew install keybase
