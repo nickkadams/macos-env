@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2026.06.15
+# Updated 2026.06.16
 
 xcode_ver="16.4"
 tf_ver="1.5.5"
@@ -74,8 +74,8 @@ else
     echo "brew found!"
 fi
 
-# create repo dir
-mkdir -p ~/code
+# create repos dir
+mkdir -p ~/repos
 
 # Check for updates
 brew update
