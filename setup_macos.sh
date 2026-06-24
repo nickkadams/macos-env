@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2026.06.16
+# Updated 2026.06.24
 
 xcode_ver="16.4"
 tf_ver="1.15.6" # "1.5.5"
@@ -242,6 +242,7 @@ brew install kics
 # k8s
 brew install argocd
 brew install fluxcd/tap/flux
+brew install --cask freelens
 brew install istioctl
 brew install derailed/k9s/k9s
 brew install kompose
@@ -251,7 +252,7 @@ brew install kubecm
 #brew install kubernetes-helm
 brew install kube-score
 brew install kustomize
-#brew install --cask lens
+# brew install --cask lens
 brew install sops
 brew install stern
 
