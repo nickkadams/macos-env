@@ -1,5 +1,5 @@
 #!/bin/bash
-# Updated 2026.06.24
+# Updated 2026.07.14
 
 xcode_ver="16.4"
 tf_ver="1.15.6" # "1.5.5"
@@ -371,6 +371,7 @@ brew install --cask gpg-suite-no-mail
 #brew install --cask insomnia
 # brew install --cask istat-menus
 brew install --cask iterm2
+brew install --cask itermbrowserplugin
 # brew install --cask karabiner-elements
 # brew install --cask kindle
 brew install --cask logi-options+
